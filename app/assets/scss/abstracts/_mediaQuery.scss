@@ -1,0 +1,6 @@
+//미디어 쿼리 1280 이상
+@mixin media-breakpoint-up {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
