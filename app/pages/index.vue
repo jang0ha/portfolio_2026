@@ -38,23 +38,13 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-@use '@/assets/scss/abstracts/_variables.scss' as *;
 @use '@/assets/scss/abstracts/_functions.scss' as *;
 @use '@/assets/scss/components/_button.scss' as *;
 .content_block {
   display: flex;
   flex-direction: column;
 }
-
 .index_wrap {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  padding: 2rem 0 4rem 0;
   font-size: 1.2rem;
 }
 .inform_wrap {
