@@ -1,9 +1,9 @@
 <template>
   <section class="index_wrap">
-    <div class="inform_wrap">
+    <div class="inform_wrap container">
       <NuxtLink to="	https://jang0ha.github.io"> https://jang0ha.github.io </NuxtLink>
     </div>
-    <ul class="project_wrap">
+    <ul class="project_wrap container">
       <li class="project_sort">
         <span>Frontend</span>
         <div class="projects">
@@ -54,20 +54,19 @@
 .project_wrap {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
 }
 .project_sort {
   flex: 1;
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
   > span {
     flex: none;
   }
 
-  + .project_sort {
-    border-top: 1px solid var(--border-color);
+  &:last-child {
+    border-bottom: 1px solid var(--border-color);
   }
 }
 .projects {

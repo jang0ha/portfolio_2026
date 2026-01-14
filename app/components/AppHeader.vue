@@ -58,8 +58,11 @@ onMounted(() => {
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
-  line-height: 1.2;
+  padding: 0.4rem 0;
+  h1 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
 }
 .btn_theme {
   display: flex;

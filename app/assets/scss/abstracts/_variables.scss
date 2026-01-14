@@ -11,15 +11,17 @@ $white: #fff;
 $black: #252525;
 
 $light-theme: (
-  background-color: #fafafa,
+  background-color: #f8f8f8,
   text-color: #333333,
-  border-color: #e0e0e0
+  border-color: #e0e0e0,
+  border-color-secondary: #404040
 );
 
 $dark-theme: (
   background-color: #1a1a1a,
   text-color: #ededed,
-  border-color: #333333
+  border-color: #333333,
+  border-color-secondary: #f8f8f8
 );
 
 //radius

@@ -1,20 +1,20 @@
 /* 버튼 스타일 정의 */
-@use "../abstracts/variables" as *;
-@use "../abstracts/functions" as *;
-@use "../abstracts/mediaQuery" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mediaQuery' as *;
 
 %btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-weight: 700;
-    touch-action: manipulation;
-    border: 0;
-    text-align: center;
-    cursor: pointer;
-    background: none;
-		color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  touch-action: manipulation;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  color: var(--text-color);
 }
 
 // //오른쪽 화살표 있는 버튼
@@ -29,29 +29,24 @@
 
 //아이콘 과 함께있는 버튼
 %anchor {
-    @extend %btn;
-		&::hover	{
-			&::after	{
-				transform: rotate(10deg);
-			}
-		}
-    &::before,
+  @extend %btn;
+  &::hover {
     &::after {
-        content: "";
-        display: block;
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        // background-position: center;
-				mask-repeat: no-repeat;
-				mask-position: center;
-				mask-size: contain;
-			
-				/* Safari 대응 */
-				-webkit-mask-repeat: no-repeat;
-				-webkit-mask-position: center;
-				-webkit-mask-size: contain;
-				transition:all 0.3s;
-			
+      transform: rotate(10deg);
     }
-		
+  }
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    /* Safari 대응 */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    transition: all 0.3s;
+  }
 }
