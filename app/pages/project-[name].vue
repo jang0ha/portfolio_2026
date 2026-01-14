@@ -120,6 +120,7 @@ const btnMoreToggle = () => {
 
 .project_sort {
   margin-bottom: 10rem;
+  height: auto;
   .sort {
     font-size: 1.4rem;
     font-weight: 600;
@@ -135,6 +136,9 @@ const btnMoreToggle = () => {
     flex-direction: column;
     font-size: 1rem;
     line-height: 1.6;
+    .links {
+      width: max-content;
+    }
   }
   @include media-breakpoint-up {
     grid-area: sort;
@@ -152,6 +156,8 @@ const btnMoreToggle = () => {
   }
 }
 .project_information {
+  height: auto;
+  margin-top: auto;
   @include media-breakpoint-up {
     grid-area: information;
     margin-top: 4rem;

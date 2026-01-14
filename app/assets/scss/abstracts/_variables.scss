@@ -18,7 +18,7 @@ $light-theme: (
 );
 
 $dark-theme: (
-  background-color: #1a1a1a,
+  background-color: #080808,
   text-color: #ededed,
   border-color: #333333,
   border-color-secondary: #f8f8f8
@@ -35,4 +35,4 @@ $svg-background: 'data:image/svg+xml;charset=utf8,';
 
 //헤더
 $header-pc-height: 6.4rem;
-$header-mobile-height: 8.4rem; // 위 아래 공백 포함 전체 높이 (실 높이는 5.6rem)
+$header-mobile-height: 4.9rem; // 위 아래 공백 포함 전체 높이 (실 높이는 5.6rem)
