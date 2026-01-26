@@ -10,9 +10,6 @@
         <span v-else>☀️</span>
       </button>
 
-      <button type="button" :class="isMobile ? 'btn_menu' : 'btn_menu hide'">
-        <span class="hide">menu button</span>
-      </button>
     </div>
   </header>
 </template>
@@ -52,17 +49,21 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/abstracts/_mediaQuery.scss' as *;
 .header-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--border-color);
-  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--text-color);
+  padding: 1rem 0 0.4rem;
   h1 {
     font-size: 1.2rem;
     line-height: 1.2;
   }
+	@include media-breakpoint-up	{
+		padding: 2rem 0 1rem;
+	}
 }
 .btn_theme {
   display: flex;

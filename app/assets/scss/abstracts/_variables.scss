@@ -5,25 +5,26 @@
 //색상 정의
 $blue: #1277ff;
 $red: #e21212;
-
 $gray: #646777;
 $white: #fff;
 $black: #252525;
 
 $light-theme: (
-  background-color: #f8f8f8,
-  text-color: #333333,
-	gray-color: #4b4b4bdd,
-  border-color: #e0e0e0,
-  border-color-secondary: #404040
+  background-color: #fafafa,
+  background-inversion-color: #141414,
+  text-color: #525252,
+	gray-color: #a3a3a3,
+	primary-color:#20e946,
+  border-color: #e5e5e5,
 );
 
 $dark-theme: (
-  background-color: #080808,
-  text-color: #ededed,
-		gray-color: #a8a8a8dd,
-  border-color: #333333,
-  border-color-secondary: #f8f8f8
+  background-color: #141414,
+  background-inversion-color: #fafafa,
+  text-color: #dddbdb,
+	gray-color: #a8a8a8dd,
+	primary-color:#e9dc20,
+  border-color: #8b8b8b,
 );
 
 //radius
@@ -36,5 +37,5 @@ $svg-background: 'data:image/svg+xml;charset=utf8,';
 //  background: url("data:image/svg+xml,#{svg-image(icon-hive-platform, fff)}") no-repeat center / 100% auto;
 
 //헤더
-$header-pc-height: 6.4rem;
-$header-mobile-height: 4.9rem; // 위 아래 공백 포함 전체 높이 (실 높이는 5.6rem)
+$header-pc-height: 7.1rem;
+$header-mobile-height: 5.5rem; // 위 아래 공백 포함 전체 높이 (실 높이는 5.6rem)

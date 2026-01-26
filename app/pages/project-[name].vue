@@ -2,7 +2,7 @@
   <!-- 프로젝트 페이지 -->
   <section class="project_wrap">
     <!-- 프로젝트 분류 -->
-    <div class="project_sort container">
+    <article class="project_sort container">
       <div class="sort">Frontend</div>
       <h2 class="name">하이브 플랫폼 웹사이트</h2>
       <div class="project_links">
@@ -11,10 +11,10 @@
         >
         <NuxtLink to="https://hiveplatform.ai/" class="links" rel="noopener">@노션주소</NuxtLink>
       </div>
-    </div>
+    </article>
 
     <!-- 프로젝트 정보 -->
-    <div class="project_information container">
+    <article class="project_information container">
       <ul class="task_list">
         <li>Nuxt SSR 환경에서 글로벌 서비스 웹사이트 구축.</li>
         <li>초기 렌더링 안정성을 고려한 UI 구현.</li>
@@ -87,10 +87,10 @@
           </tbody>
         </table>
       </div>
-    </div>
+    </article>
 
     <!-- 프로젝트 이미지 -->
-    <div class="project_images">.</div>
+    <article class="project_images"></article>
   </section>
 </template>
 
@@ -140,8 +140,9 @@ const btnMoreToggle = () => {
     .links {
 			width: max-content;
 			@extend %anchor;
+			font-weight: normal;
 			color:var(--gray-color);
-			transition:all 0.2s;
+			transition:color 0.2s;
 			&::after {
 				opacity: 0;
 				content:'';
@@ -259,7 +260,7 @@ const btnMoreToggle = () => {
     padding: 0.8rem 0;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    transition: all 0.2s;
+    transition: border-top 0.2s border-bottom 0.2s;
     &::before {
       display: none;
     }
@@ -282,6 +283,9 @@ const btnMoreToggle = () => {
       }
     }
   }
+	@include media-breakpoint-up	{
+		margin-top: 10rem;
+	}
 }
 
 .project_images {
