@@ -16,11 +16,13 @@
     <!-- 프로젝트 정보 -->
     <div class="project_information container">
       <ul class="task_list">
-        <li>Nuxt SSR 환경에서 글로벌 서비스 웹사이트 개발</li>
-        <li>초기 렌더링 안정성을 고려한 UI 구현</li>
-        <li>브라우저 언어 감지 기반 다국어 처리 및 구조 설계</li>
-        <li>컴포넌트 단위 퍼블리싱과 스타일 관리로 확장성과 유지보수성 강화</li>
-        <li>다국어 대응 시 UI 이슈를 사전에 대응해 글로벌 환경에서도 안정적인 사용자 경험 제공</li>
+        <li>Nuxt SSR 환경에서 글로벌 서비스 웹사이트 구축.</li>
+        <li>초기 렌더링 안정성을 고려한 UI 구현.</li>
+        <li>브라우저 언어 감지 기반 다국어 처리, 한/영 콘텐츠 및 링크 분기, 언어별 URL 구조 설계.</li>
+        <li>컴포넌트 단위 퍼블리싱과 스타일 관리로 확장성과 유지보수성 강화.</li>
+        <li>다국어 환경에서 발생하는 UI 이슈 선제 대응으로 안정적인 UX 제공.</li>
+				<li>Main, Solution, Fee, Customers & Partners 페이지를 포함한 총 6페이지의 UI 구조 및 인터랙션을 구현.</li>
+				<li>이외 외부 서비스로 연결되는 링크 구조로 브라우저 및 디바이스 언어에 따라 설계·연동.</li>
       </ul>
 
       <div class="project_description_wrap">
@@ -74,13 +76,12 @@
             <tr>
               <th scope="row">구성</th>
               <td>
-                <ul class="task_list">
-                  <li>메인 1p : 네이버 블로그 rss 파싱 제외</li>
-                  <li>솔루션 1p(총6p): 동적 페이지 구성</li>
-                  <li>요금 1p</li>
-                  <li>고객사와 파트너 1p</li>
-                  <li>페이지 구조, 컴포넌트, 스타일, 인터렉션</li>
-                </ul>
+								<ul class="task_list">
+									<li><div class="sort">메인 1p</div><span>네이버 블로그 rss 파싱 제외 UI 퍼블리싱.</span></li>
+									<li><div class="sort">솔루션 1p(총6p) </div><span>동적 페이지 구성,<br> 단일 템플릿 기반 다중 콘텐츠 대응 구조 설계.</span></li>
+									<li><div class="sort">요금 1p</div></li>
+									<li><div class="sort">고객사와 파트너 1p</div><span>페이지 위치에 따라 동작하는 푸터 AWS 버튼 인터랙션 구현.<br>디바이스 언어 기반 영·한 Play Store 링크 조건 분기 처리.</span></li>
+								</ul>
               </td>
             </tr>
           </tbody>
@@ -89,7 +90,7 @@
     </div>
 
     <!-- 프로젝트 이미지 -->
-    <div class="project_images"></div>
+    <div class="project_images">.</div>
   </section>
 </template>
 
@@ -137,7 +138,22 @@ const btnMoreToggle = () => {
     font-size: 1rem;
     line-height: 1.6;
     .links {
-      width: max-content;
+			width: max-content;
+			@extend %anchor;
+			color:var(--gray-color);
+			transition:all 0.2s;
+			&::after {
+				opacity: 0;
+				content:'';
+				width: 1rem;
+				height: 1rem;
+				margin-left: 0.6rem;
+				background-color: var(--text-color);
+				mask-image: url('#{svg-image(arrow-short)}');
+				-webkit-mask-image: url('#{svg-image(arrow-short)}');
+				transition:opacity 0.2s transform 0.1s 0.2s;
+
+			}
     }
   }
   @include media-breakpoint-up {
@@ -151,9 +167,37 @@ const btnMoreToggle = () => {
       line-height: 1.2;
     }
     .project_links {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+		.links	{
+			&:hover	{
+					font-weight: bold;
+					color: var(--text-color);
+					&::after	{
+						opacity: 1;
+						transform: rotate(360deg)
+					}
+				}
+			}
     }
   }
+}
+.task_list	{
+	display:table;
+	li	{
+		& + li	{
+			margin-top: 0.4rem;
+		}
+		> .sort	{
+			width: max-content;
+		}
+	}
+	@include media-breakpoint-up	{
+		li	{
+			& + li	{
+				margin-top: 1rem;
+			}	
+		}
+	}
 }
 .project_information {
   height: auto;
@@ -162,7 +206,7 @@ const btnMoreToggle = () => {
     grid-area: information;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 .project_description {
@@ -177,7 +221,6 @@ const btnMoreToggle = () => {
     height: 0;
     overflow: hidden;
   }
-
   th,
   td {
     padding: 0.4rem 0;
@@ -200,6 +243,11 @@ const btnMoreToggle = () => {
       }
     }
   }
+	@include media-breakpoint-up	{
+		li {
+			padding:0.4rem 0;
+		}
+	}
 }
 .project_description_wrap {
   margin-top: 2rem;
@@ -235,6 +283,7 @@ const btnMoreToggle = () => {
     }
   }
 }
+
 .project_images {
   //display: none;
   position: relative;
@@ -242,6 +291,11 @@ const btnMoreToggle = () => {
   padding-bottom: 68%;
   margin-top: 2rem;
   overflow: hidden;
+	[data-theme="dark"] & {
+		&::after	{
+			display: none;
+		}
+	}
   &::before {
     content: '';
     display: block;
