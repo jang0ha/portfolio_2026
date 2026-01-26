@@ -10,11 +10,12 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-		"format": "prettier --check .",
-		"format:fix": "prettier --write ."
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "dependencies": {
     "nuxt": "^4.2.2",
+    "nuxt-swiper": "^2.0.1",
     "sass": "^1.97.2",
     "sass-loader": "^16.0.6",
     "vue": "^3.5.26",

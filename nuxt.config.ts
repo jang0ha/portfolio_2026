@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-	css: ['~/assets/scss/layout/_index.scss'],
+    css: ['~/assets/scss/layout/_index.scss'],
   components: [
     {
       global: true,
@@ -11,5 +11,5 @@ export default defineNuxtConfig({
     },
   ],
 
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', 'nuxt-swiper'],
 })
