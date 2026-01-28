@@ -1,45 +1,8 @@
 <template>
-  <section class="index_wrap">
-    <article class="inform_wrap container">
-      <NuxtLink to="	https://jang0ha.github.io"> https://jang0ha.github.io </NuxtLink>
-    </article>
-    <article class="hero_wrap container">
-      <h2 class="main_title">Portfolio.</h2>
-      <div class="hero_swiper_wrap">
-        <ClientOnly>
-          <swiper-container ref="containerRef" :init="false" class="hero_swiper_container">
-            <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
-              <h3 class="hero_title">{{ slide.title }}</h3>
-              <p class="hero_desc">{{ slide.desc }}</p>
-            </swiper-slide>
-          </swiper-container>
-        </ClientOnly>
-      </div>
-    </article>
-    <article class="project_wrap container">
-      <ul class="project_list">
-        <li class="project_sort" v-for="(projects, sort) in groupedProjects" :key="sort">
-          <span>{{ sort }}</span>
-
-          <div class="projects">
-            <NuxtLink
-              v-for="project in projects"
-              :key="project.key"
-              :to="`/project/${project.key}`"
-              :title="`${project.title} 상세 페이지로 이동`"
-              class="project_link"
-            >
-              {{ project.title }}
-            </NuxtLink>
-          </div>
-        </li>
-      </ul>
-    </article>
-  </section>
+  <section class="index_wrap"></section>
 </template>
 
 <script setup>
-//슬라이드 데이터
 const containerRef = ref(null);
 const slides = ref([
   {
@@ -76,23 +39,8 @@ const swiper = useSwiper(containerRef, {
   },
 });
 
-//onMounted(() => {
-//  console.log(swiper.instance);
-//});
-
-//프로젝트 링크 가기
-import { useProjects } from '@/composables/useProjects';
-const { allProjects } = useProjects();
-// sort 기준으로만 묶기
-const groupedProjects = computed(() => {
-  return allProjects.reduce((acc, project) => {
-    if (!acc[project.sort]) {
-      acc[project.sort] = [];
-    }
-    acc[project.sort].push(project);
-    console.log(acc[project.sort]);
-    return acc;
-  }, {});
+onMounted(() => {
+  console.log(swiper.instance);
 });
 </script>
 
