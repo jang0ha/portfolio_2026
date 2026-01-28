@@ -134,6 +134,7 @@ const groupedProjects = computed(() => {
 .project_wrap {
   display: flex;
   flex-direction: column;
+  margin-top: 12rem;
   height: auto;
   grid-area: project;
   @include media-breakpoint-up {

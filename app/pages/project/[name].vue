@@ -146,7 +146,7 @@ const project = computed(() => getProject(projectKey));
 // 다른 프로젝트들 (현재 제외)
 const otherProjects = computed(() => getOtherProjects(projectKey));
 
-// ❗ 프로젝트가 없으면 404 처리
+// 프로젝트가 없으면 404 처리
 if (!project.value) {
   throw createError({
     statusCode: 404,
