@@ -345,7 +345,6 @@ const { image } = useResponsiveImage(project.value.images);
 }
 
 .project_images {
-  //display: none;
   position: relative;
   //padding-bottom: 68%;
   margin-top: 2rem;
@@ -354,9 +353,10 @@ const { image } = useResponsiveImage(project.value.images);
   overflow: hidden;
   [data-theme='dark'] & {
     &::after {
-      display: none;
+      background: rgba(255, 255, 255, 0.5);
     }
   }
+
   .project_img {
     width: 100%;
     height: auto;
@@ -364,15 +364,30 @@ const { image } = useResponsiveImage(project.value.images);
     transform: translateY(0);
     transition-property: transform;
     transition-timing-function: linear;
-
-    /* 핵심: 컨테이너 높이에 비례한 duration */
-    transition-duration: 3s;
+    transition-duration: 10s;
   }
   &:hover,
   &:active {
+    &::after {
+      opacity: 0;
+    }
     .project_img {
       transform: translateY(calc(calc(100% - 30rem) * -1));
     }
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.3s;
   }
   @include media-breakpoint-up {
     height: 70rem;
@@ -382,26 +397,10 @@ const { image } = useResponsiveImage(project.value.images);
       transition-duration: 10s;
       transition-delay: 0.4s;
     }
-    &::after {
-      content: '';
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      opacity: 1;
-      transition: opacity 0.3s;
-    }
+
     &:hover {
       .project_img {
         transform: translateY(calc(calc(100% - 70rem) * -1));
-      }
-      &::after {
-        opacity: 0;
       }
     }
   }
@@ -432,6 +431,12 @@ const { image } = useResponsiveImage(project.value.images);
         margin-left: 2rem;
       }
     }
+  }
+  @include media-breakpoint-up {
+    .nav_title {
+      font-size: 1.6rem;
+    }
+    font-size: 1.2rem;
   }
 }
 </style>
