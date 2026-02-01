@@ -1,11 +1,11 @@
 <template>
-  <section class="index_wrap">
-    <article class="inform_wrap container">
+  <div class="index_wrap">
+    <section class="inform_wrap container">
       <NuxtLink to="	https://jang0ha.github.io"> https://jang0ha.github.io </NuxtLink>
-    </article>
-    <article class="hero_wrap container">
+    </section>
+    <section class="hero_wrap container">
       <h2 class="main_title">Portfolio.</h2>
-      <div class="hero_swiper_wrap">
+      <article class="hero_swiper_wrap">
         <ClientOnly>
           <swiper-container ref="containerRef" :init="false" class="hero_swiper_container">
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
@@ -14,9 +14,9 @@
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
-      </div>
-    </article>
-    <article class="project_wrap container">
+      </article>
+    </section>
+    <section class="project_wrap container">
       <ul class="project_list">
         <li class="project_sort" v-for="(projects, sort) in groupedProjects" :key="sort">
           <span>{{ sort }}</span>
@@ -34,8 +34,8 @@
           </div>
         </li>
       </ul>
-    </article>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script setup>

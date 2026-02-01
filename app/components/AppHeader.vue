@@ -6,7 +6,7 @@
           >0&emsp;&emsp;H<br />/&emsp;&emsp; JANG<span>&ensp;PORTFOLIO</span></NuxtLink
         >
       </h1>
-      <NuxtLink to="/about" class="menu" :title="`어바웃 페이지로 이동`">About me</NuxtLink>
+      <NuxtLink to="/about" class="menu" :title="`어바웃 페이지로 이동`">About</NuxtLink>
       <button
         type="button"
         class="btn_theme"

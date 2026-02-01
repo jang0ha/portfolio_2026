@@ -1,0 +1,15 @@
+// gsap(클라이언트) 선언
+// plugins/gsap.client.ts
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+export default defineNuxtPlugin(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  return {
+    provide: {
+      gsap,
+      ScrollTrigger,
+    },
+  };
+});
