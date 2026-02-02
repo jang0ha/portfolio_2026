@@ -4,5 +4,6 @@
     <main class="content_block">
       <NuxtPage />
     </main>
+    <AppFooter />
   </div>
 </template>

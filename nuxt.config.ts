@@ -16,4 +16,22 @@ export default defineNuxtConfig({
     dir: 'public/images',
     domains: [], // 외부 URL 허용 시 필요
   },
+
+  runtimeConfig: {
+    // 서버 사이드에서만 접근 가능한 설정
+    // (현재는 필요 없지만 향후 DB 연결 등에 사용)
+    // apiSecret: '', // .env의 NUXT_API_SECRET로 자동 오버라이드
+
+    // 클라이언트에서도 접근 가능한 공개 설정
+    public: {
+      // 데이터 소스: 'static' 또는 'api'
+      // .env 파일의 NUXT_PUBLIC_DATA_SOURCE 값으로 자동 오버라이드됨
+      // 기본값: 'static' (환경변수가 없을 때)
+      dataSource: 'static',
+
+      // API 기본 URL (선택사항)
+      // .env 파일의 NUXT_PUBLIC_API_BASE_URL 값으로 자동 오버라이드됨
+      apiBaseUrl: '',
+    },
+  },
 });

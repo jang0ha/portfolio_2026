@@ -84,11 +84,11 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    min-height: calc(100vh - $header-mobile-height);
+    min-height: calc(100vh - $header-mobile-height - 3.5rem);
     padding: 4rem 0;
-		@include media-breakpoint-up	{
-    	min-height: calc(100vh - $header-pc-height);
-		}
+    @include media-breakpoint-up {
+      min-height: calc(100vh - $header-pc-height - 3.5rem);
+    }
   }
 }
 .container {

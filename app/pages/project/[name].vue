@@ -124,11 +124,25 @@
 </template>
 
 <script setup>
-import { useProjects } from '@/composables/useProjects';
+/**
+ * 환경변수 기반 자동 전환
+ *
+ * useProjectsUnified()는 내부적으로:
+ * - NUXT_PUBLIC_DATA_SOURCE=static → useProjects() 호출 (동기)
+ * - NUXT_PUBLIC_DATA_SOURCE=api → useProjectsApi() 호출 (비동기)
+ *
+ * API 모드일 때는 await가 필요하므로 항상 await 사용
+ */
 
-const router = useRouter();
+// api/static 로 호출할경우
+import { useProjectsUnified } from '@/composables/useProjectsUnified';
+// static 으로만 호출할떄
+//import { useProjects } from '@/composables/useProjects';
+
 const route = useRoute(); // 라우터 가져오기
-const { getProject, getOtherProjects } = useProjects();
+
+// 통합 composable 사용 (환경변수에 따라 자동 전환)
+const { allProjects, getProject, getOtherProjects, dataSource } = await useProjectsUnified();
 
 // 더보기 버튼 토글
 const isOpened = ref(false);
@@ -418,7 +432,9 @@ const { image } = useResponsiveImage(project.value.images);
     li {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid var(--border-color);
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+      }
       a {
         padding: 0.8rem 0;
         width: 100%;

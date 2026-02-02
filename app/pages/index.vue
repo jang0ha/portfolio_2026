@@ -228,10 +228,6 @@ const groupedProjects = computed(() => {
   > span {
     flex: none;
   }
-
-  &:last-child {
-    border-bottom: 1px solid var(--border-color);
-  }
 }
 .projects {
   width: 60%;

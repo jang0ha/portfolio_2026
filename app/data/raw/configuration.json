@@ -2,126 +2,121 @@
   {
     "projectKey": "hiveplatform",
     "label": "메인",
-    "description": "네이버 블로그 rss 파싱 제외 UI 퍼블리싱."
+    "description": "메인 페이지 UI 구현 (RSS 파싱 제외)"
   },
   {
     "projectKey": "hiveplatform",
-    "label": "솔루션(총6p)",
-    "description": "동적 페이지 구성, \n단일 템플릿 기반 다중 콘텐츠 대응 구조 설계."
+    "label": "솔루션 (6p)",
+    "description": "단일 템플릿 기반 동적 페이지 시스템 구현 (다중 콘텐츠 대응 구조)"
   },
   {
     "projectKey": "hiveplatform",
     "label": "요금",
-    "description": ""
+    "description": "요금제 페이지 UI 구현 및 반응형 테이블 레이아웃 설계"
   },
   {
     "projectKey": "hiveplatform",
     "label": "고객사와 파트너",
-    "description": "페이지 위치에 따라 동작하는 푸터 AWS 버튼 인터랙션 구현.\n디바이스 언어 기반 영·한 Play Store 링크 조건 분기 처리."
+    "description": "스크롤 위치 기반 AWS 버튼 인터랙션 구현, 디바이스 언어 감지 기반 Play Store 링크 분기 처리"
   },
   {
     "projectKey": "thestarlight",
     "label": "메인",
-    "description": ""
+    "description": "메인 페이지 전체 레이아웃 구현 및 섹션별 GSAP 애니메이션 통합"
   },
   {
     "projectKey": "thestarlight",
     "label": "사전예약 & 이벤트",
-    "description": "사전예약, 이벤트 1, 2 섹션으로 구성 aos.js 활용하여 인터렉션 구현"
+    "description": "AOS.js 기반 스크롤 인터랙션 구현 (사전예약, 이벤트 섹션)"
   },
   {
     "projectKey": "thestarlight",
     "label": "게임소개",
-    "description": "gsap, scrollTrigger, swiper, css 통해 스크롤시 섹션별 다양한 인터렉션을 구현"
+    "description": "GSAP ScrollTrigger + Swiper + CSS를 조합한 섹션별 다층 스크롤 인터랙션 구현"
   },
   {
     "projectKey": "thestarlight",
     "label": "프롤로그",
-    "description": "스크롤 위치에 따라 텍스트가 한 글자씩 출력되는 타입라이팅 애니메이션을 구현 & 슬라이드 전환"
+    "description": "스크롤 진행도 기반 타이핑 애니메이션 및 슬라이드 전환 효과 구현"
   },
   {
     "projectKey": "thestarlight",
-    "label": "캐릭터(리스트/상세)",
-    "description": "리스트 - 뷰포트 상단 기준 10% 지점 도달 시 인트로 영상 자동 재생 (1회 실행)\n상세 - CSS 애니메이션을 활용한 파티클 효과 구현 (흩날림, 확장, 수축 등)"
+    "label": "캐릭터 (리스트/상세)",
+    "description": "리스트: Viewport 기반 인트로 영상 자동 재생 제어 (Intersection Observer)\n상세: CSS 애니메이션 기반 파티클 효과 (흩날림, 확장, 수축)"
   },
   {
     "projectKey": "thestarlight",
     "label": "게임특징",
-    "description": "스크롤 시 카드가 순차적으로 쌓이는(Stack) 구조로 기능을 소개\nZ-index와 모션 타이밍을 조절해 입체적인 정보 전달 구성"
+    "description": "스크롤 기반 카드 스택(Stack) 인터랙션 구현 (Z-index + 모션 타이밍 제어)"
   },
   {
     "projectKey": "thestarlight",
     "label": "사운드",
-    "description": "세로 스크롤을 활용한 가로 스크롤 인터랙션 구현\n사운드 재생 시 배경 파티클이 반응하는 인터랙션 연동\n스크롤 중심 인터랙션을 Swiper 기반 터치 UI로 전환\n모바일 사용성 및 퍼포먼스 개선"
-  },
-  {
-    "projectKey": "thestarlight",
-    "label": "팝업",
-    "description": "이미지 팝업 총 6종"
+    "description": "세로 스크롤 기반 가로 스크롤 인터랙션 구현, 사운드 재생 연동 파티클 반응 효과\n모바일: Swiper 기반 터치 UI로 재설계하여 사용성 및 성능 최적화"
   },
   {
     "projectKey": "gc",
     "label": "메인",
-    "description": "GSAP + ScrollTrigger로 메인 페이지 스크롤 기반 인터랙션 구현\nSVG GC 로고 애니메이션 제어(재생, 일시정지, 스크럽, 속도 조절)\n스크롤에 따라 SVG, 이미지, 텍스트를 자연스럽게 전환\nFade, Opacity, Stack, Flip 등 다양한 모션 효과로 몰입감 있는 UX 제공"
+    "description": "GSAP ScrollTrigger 기반 메인 페이지 인터랙션 구현\nSVG GC 로고 애니메이션 제어 (재생, 일시정지, 스크럽, 속도 조절)\nFade, Opacity, Stack, Flip 등 다층 모션 효과로 스토리텔링 UX 구현"
   },
   {
     "projectKey": "gc",
-    "label": "페이지 전체",
-    "description": "영문 전체 번역 시 발생한 텍스트 오버플로우, 줄바꿈, 컴포넌트 깨짐 이슈 해결.\n한/영 텍스트 길이 차이를 고려한 유연한 레이아웃 및 반응형 규칙 개선."
+    "label": "다국어 대응",
+    "description": "한/영 텍스트 길이 차이로 인한 오버플로우, 줄바꿈, 레이아웃 깨짐 이슈 해결\n유연한 레이아웃 및 반응형 규칙 개선"
   },
   {
     "projectKey": "gc",
-    "label": "레이아웃",
-    "description": "**가이드, 레이아웃 작업 하지 않음."
+    "label": "협업 및 검수",
+    "description": "외부 협력사 산출물 검수 및 품질 관리 (PL 역할)"
   },
   {
     "projectKey": "cau",
-    "label": "pc",
-    "description": "총 130p"
+    "label": "PC (130p)",
+    "description": "PC 버전 전체 페이지 구현 (WCAG 2.0 기준 시맨틱 마크업, 키보드 접근성)"
   },
   {
     "projectKey": "cau",
-    "label": "mobile",
-    "description": "총 26p"
+    "label": "Mobile (26p)",
+    "description": "모바일 반응형 페이지 구현 (터치 인터페이스 최적화)"
   },
   {
     "projectKey": "cau",
-    "label": "레이아웃",
-    "description": "**가이드, 레이아웃 작업 하지 않음."
+    "label": "웹 접근성 심사",
+    "description": "2차 웹 접근성 심사 통과 (영상 콘텐츠 제외)"
   },
   {
     "projectKey": "event",
     "label": "상시 이벤트",
-    "description": "정기 이벤트 마크업 가이드에 따라 OS·브라우저·다국어(최대 16개 언어) 환경을 고려한 이벤트 제작"
+    "description": "OS·브라우저·다국어(최대 16개 언어) 환경 대응 이벤트 페이지 제작 (사내 마크업 가이드 준수)"
   },
   {
     "projectKey": "event",
     "label": "메일링",
-    "description": "iOS(Safari, Firefox), Android(Chrome) 환경, 모바일 브라우저(Naver, Google, Daum) 별 UI 동작을 검증 "
+    "description": "모바일 이메일 클라이언트 호환성 검증 (iOS Safari/Firefox, Android Chrome, Naver/Google/Daum 브라우저)"
   },
   {
     "projectKey": "admin",
     "label": "가이드",
-    "description": "공통 레이아웃, 버튼, 페이지네이션, 드롭다운 등 반복 사용되는 UI 요소에 대한 가이드를 정리·제공"
+    "description": "공통 UI 컴포넌트 가이드 제작 (레이아웃, 버튼, 페이지네이션, 드롭다운 등)"
   },
   {
     "projectKey": "admin",
     "label": "대시보드",
-    "description": "Chart.js를 활용해 디자인 의도에 맞춘 커스터마이즈드 대시보드를 구현하고, 데이터 가독성과 사용성을 개선"
+    "description": "Chart.js 기반 커스터마이즈드 대시보드 구현 (데이터 시각화 최적화)"
   },
   {
     "projectKey": "admin",
-    "label": "페이지",
-    "description": "Samsung 디자인 가이드에 따라 페이지 아이콘 제작, 컬러 정의 체계화, 빈 값(Empty State) 처리 기준을 정리·적용\n기존 페이지 구조를 유지한 상태에서 점진적인 코드 리팩토링을 진행하여 안정성을 확보"
+    "label": "페이지 개선",
+    "description": "Samsung One UI 디자인 가이드 적용 (아이콘, 컬러 체계)\n점진적 리팩토링을 통한 코드 안정성 확보"
   },
   {
     "projectKey": "etc",
-    "label": "레이아웃",
-    "description": "**헤더 푸터 제외 모든 가이드 작업 진행"
+    "label": "UI 가이드",
+    "description": "Zendesk 고객지원센터 전체 UI 가이드 제작 (헤더/푸터 제외)"
   },
   {
     "projectKey": "etc",
-    "label": "페이지",
-    "description": "Zendesk는 구조 변경이 쉽지 않은 SaaS라서, 먼저 DOM과 클래스 규칙을 분석한 뒤 기존 구조를 유지하는 방식으로 디자인을 적용"
+    "label": "페이지 커스터마이징",
+    "description": "Zendesk SaaS 플랫폼 구조 분석 (DOM, 클래스 규칙) 후 기존 구조 유지하는 방식으로 디자인 적용"
   }
 ]
