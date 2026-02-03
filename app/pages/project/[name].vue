@@ -168,6 +168,14 @@ if (!project.value) {
   });
 }
 
+// SEO 메타 태그 설정 (동적 프로젝트 정보)
+usePageSeo({
+  title: `프로젝트 | ${project.value.title}`,
+  description: `${project.value.title} - ${project.value.sort} 프로젝트 상세 정보`,
+  ogTitle: `프로젝트 | ${project.value.title}`,
+  ogDescription: `${project.value.title} - ${project.value.sort}`,
+});
+
 // 이미지 가져오기 (PC / 모바일 구분)
 
 const { image } = useResponsiveImage(project.value.images);

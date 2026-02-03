@@ -39,6 +39,9 @@
 </template>
 
 <script setup>
+// SEO 메타 태그 설정 (config/seo.ts에서 관리)
+usePageSeo();
+
 //슬라이드 데이터
 const containerRef = ref(null);
 const slides = ref([
