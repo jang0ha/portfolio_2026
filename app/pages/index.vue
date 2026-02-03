@@ -1,7 +1,14 @@
 <template>
   <div class="index_wrap">
     <section class="inform_wrap container">
-      <NuxtLink to="	https://jang0ha.github.io"> https://jang0ha.github.io </NuxtLink>
+      <NuxtLink
+        to="https://github.com/jang0ha"
+        target="_blank"
+        :title="`깃허브로 새창이동`"
+        rel="noopener"
+      >
+        https://github.com/jang0ha</NuxtLink
+      >
     </section>
     <section class="hero_wrap container">
       <h2 class="main_title">Portfolio.</h2>

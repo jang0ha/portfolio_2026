@@ -13,7 +13,7 @@
           v-for="link in project.links"
           :key="link.url"
           :to="link.url"
-          :title="`${project.title} ${link.label} 이동`"
+          :title="`${project.title} ${link.label} 새창 이동`"
           class="links"
           target="_blank"
           rel="noopener"
