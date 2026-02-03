@@ -1,11 +1,11 @@
 [
   {
     "projectKey": "hiveplatform",
-    "text": "Nuxt.js SSR 환경에서 글로벌 서비스 웹사이트 구축 및 초기 렌더링 안정성 확보"
+    "text": "Nuxt.js SSR 환경에서 글로벌 서비스 웹사이트 구축"
   },
   {
     "projectKey": "hiveplatform",
-    "text": "브라우저 언어 감지 기반 i18n 구현 (한/영 콘텐츠 분기, 언어별 URL 라우팅)"
+    "text": "브라우저 언어 감지 기반 i18n 구현 (한/영 콘텐츠 분기, 언어별 URL 라우팅)→ JSON 파일 기반 데이터 바인딩 / 렌더링"
   },
   {
     "projectKey": "hiveplatform",

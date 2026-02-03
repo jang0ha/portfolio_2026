@@ -5,19 +5,25 @@
     "url": "https://hiveplatform.ai/"
   },
   {
+    "projectKey": "hiveplatform",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/2fc12b81902a819fbef9e3b52d4cd807?source=copy_link"
+  },
+
+  {
     "projectKey": "thestarlight",
     "label": "Website",
     "url": "https://www.thestarlight.co.kr/"
   },
   {
-    "projectKey": "gc",
-    "label": "Website",
-    "url": "https://recruit.gccorp.com/kor/main"
+    "projectKey": "thestarlight",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/2fc12b81902a8116b822d4dd00f15652?source=copy_link"
   },
   {
     "projectKey": "gc",
-    "label": "Notion",
-    "url": "https://www.notion.so/jang0ha/GC-6adea8d332004c5da04e67cae0a0a274?v=6d18bc726c70418288953c627f134995&source=copy_link"
+    "label": "Website",
+    "url": "https://recruit.gccorp.com/kor/main"
   },
   {
     "projectKey": "cau",
@@ -27,7 +33,7 @@
   {
     "projectKey": "admin",
     "label": "Notion",
-    "url": "https://www.notion.so/jang0ha/58e568f60cd74fa9b83b0596275259a1?v=6d18bc726c70418288953c627f134995&source=copy_link"
+    "url": "https://www.notion.so/jang0ha/SPEC-CMS-9adcde2a1c534787902f65db87c3d4a9?source=copy_link"
   },
   {
     "projectKey": "etc",
