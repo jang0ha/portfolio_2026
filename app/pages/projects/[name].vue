@@ -113,7 +113,7 @@
       <h3 class="nav_title">Other Projects</h3>
       <ul class="project_list">
         <li v-for="item in otherProjects" :key="item.key" class="project_item">
-          <NuxtLink :to="`/project/${item.key}`" :title="`${item.title} 페이지로 이동`">
+          <NuxtLink :to="`/projects/${item.key}`" :title="`${item.title} 페이지로 이동`">
             <span class="sort">{{ item.sort }}</span>
             <strong class="title">{{ item.title }}</strong>
           </NuxtLink>

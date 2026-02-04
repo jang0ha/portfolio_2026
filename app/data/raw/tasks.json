@@ -88,6 +88,10 @@
     "text": "최대 16개 언어 지원 환경에서도 UI 안정성 유지 (텍스트 오버플로우, 레이아웃 유연성 고려)"
   },
   {
+    "projectKey": "event",
+    "text": "** 본 이미지는 컴투스플랫폼 재직 당시 작업한 결과물 이며 본 이미지에 대한 저작권은 컴투스에 있습니다."
+  },
+  {
     "projectKey": "admin",
     "text": "다국어(multilingual) 지원 Samsung Galaxy 스펙 관리 CMS 리뉴얼 및 고도화"
   },

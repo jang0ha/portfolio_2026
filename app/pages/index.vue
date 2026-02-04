@@ -32,7 +32,7 @@
             <NuxtLink
               v-for="project in projects"
               :key="project.key"
-              :to="`/project/${project.key}`"
+              :to="`/projects/${project.key}`"
               :title="`${project.title} 상세 페이지로 이동`"
               class="project_link"
             >

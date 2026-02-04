@@ -50,6 +50,15 @@
       웹 표준, 접근성, 성능 최적화를 기반으로 실무에서 요구되는 프론트엔드 개발 역량을 갖추고
       있습니다.
     </p>
+    <NuxtLink
+      to="https://jang0ha.notion.site/2026-2fd12b81902a809e9e4efaaf347069dd?source=copy_link"
+      target="_blank"
+      :title="`포트폴리오 설명 노션으로 새창이동`"
+      rel="noopener"
+      class="btn_more"
+    >
+      더 많은 정보 확인하러 가기</NuxtLink
+    >
   </section>
 </template>
 
@@ -91,7 +100,7 @@ const sections = [
 const stackItems = [
   {
     label: 'Data Modeling',
-    desc: 'Excel 기반의 정규화된 데이터 스키마를 설계하여 프로젝트 정보를 구조화했습니다.',
+    desc: 'Excel 기반으로 데이터를 가공하고, projectKey를 기준으로 각 시트를 연결하여 중복 없이 관리할 수 있도록 구조화했습니다.',
     code: '/data/raw/projects.xlsx',
   },
   {
@@ -290,7 +299,9 @@ onUnmounted(() => {
 });
 </script>
 <style lang="scss" scoped>
+@use '@/assets/scss/abstracts/_functions.scss' as *;
 @use '@/assets/scss/abstracts/_mediaQuery.scss' as *;
+@use '@/assets/scss/components/_button.scss' as *;
 .about_wrap {
   justify-content: flex-start;
   .scroll_text {
@@ -452,5 +463,30 @@ onUnmounted(() => {
   font-size: clamp(1rem, 2vw, 1.4rem);
   text-align: center;
   line-height: 1.6;
+}
+.btn_more {
+  @extend %anchor;
+  font-weight: normal;
+  color: var(--gray-color);
+  transition: color 0.2s;
+  &::after {
+    opacity: 0;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.6rem;
+    background-color: var(--text-color);
+    mask-image: url('#{svg-image(arrow-short)}');
+    -webkit-mask-image: url('#{svg-image(arrow-short)}');
+    transition: opacity 0.2s transform 0.1s 0.2s;
+  }
+  &:hover {
+    font-weight: bold;
+    color: var(--text-color);
+    &::after {
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+  }
 }
 </style>
