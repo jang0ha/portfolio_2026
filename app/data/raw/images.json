@@ -49,12 +49,6 @@
   },
   {
     "projectKey": "event",
-    "device": "mobile",
-    "src": "/images/project/event/mobile.png",
-    "alt": "event visual mobile"
-  },
-  {
-    "projectKey": "event",
     "device": "pc",
     "src": "/images/project/event/pc.png",
     "alt": "event visual pc"

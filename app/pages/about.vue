@@ -111,7 +111,7 @@ const stackItems = [
   },
   {
     label: 'API Architecture',
-    desc: 'Nuxt 4 Server Routes를 활용한 RESTful API 엔드포인트를 구축했습니다.',
+    desc: 'Nuxt 4 Server Routes를 활용해 엔드포인트를 구성했습니다.',
     subDesc: `정적 데이터와 API 기반 구조를 환경변수(Runtime Config)로 전환 가능하도록 설계했습니다.
 		클라이언트 코드 수정 없이 데이터 소스를 교체할 수 있어,
 		실무 환경에서도 최소한의 마이그레이션 비용으로 전환할 수 있습니다.`,
