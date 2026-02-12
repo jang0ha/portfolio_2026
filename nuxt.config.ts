@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', 'nuxt-swiper', '@nuxt/image-edge'],
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  features: {
+    inlineStyles: false,
+  },
   css: ['~/assets/scss/layout/_index.scss'],
 
   app: {
