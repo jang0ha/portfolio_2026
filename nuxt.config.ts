@@ -6,6 +6,13 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: false,
   },
+  postcss: {
+    plugins: {
+      cssnano: {
+        preset: ['default', { cssDeclarationSorter: false }],
+      },
+    },
+  },
   css: ['~/assets/scss/layout/_index.scss'],
 
   app: {
