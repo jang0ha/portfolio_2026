@@ -127,9 +127,9 @@ const groupedProjects = computed(() => {
   }
 }
 .inform_wrap {
+  grid-area: index;
   margin-bottom: 10rem;
   font-size: clamp(1rem, 2vw, 1.6rem);
-  grid-area: index;
   a {
     color: var(--gray-color);
     transition: color 0.2s;
@@ -144,9 +144,9 @@ const groupedProjects = computed(() => {
 .project_wrap {
   display: flex;
   flex-direction: column;
+  grid-area: project;
   margin-top: 12rem;
   height: auto;
-  grid-area: project;
   @include media-breakpoint-up {
     justify-content: end;
   }
@@ -172,8 +172,8 @@ const groupedProjects = computed(() => {
     mix-blend-mode: exclusion;
   }
   .hero_desc {
-    margin-top: 1rem;
     padding: 0 1vw;
+    margin-top: 1rem;
     font-size: clamp(1.2rem, 2vw, 2.4rem);
     font-weight: 300;
     color: var(--gray-color);
@@ -188,10 +188,10 @@ const groupedProjects = computed(() => {
       content: '';
       position: absolute;
       bottom: 50%;
-      background-color: var(--background-inversion-color);
+      z-index: -1;
       width: 100%;
       height: 20rem;
-      z-index: -1;
+      background-color: var(--background-inversion-color);
     }
   }
   .swiper-slide-active {
@@ -240,8 +240,8 @@ const groupedProjects = computed(() => {
   }
 }
 .projects {
-  width: 60%;
   padding-left: 2rem;
+  width: 60%;
 }
 .project_link {
   display: flex;

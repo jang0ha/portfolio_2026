@@ -310,9 +310,9 @@ onUnmounted(() => {
     left: 50%;
     bottom: 0%;
     transform: translateX(-50%);
+    z-index: 1;
     font-size: 20vw;
     mix-blend-mode: difference;
-    z-index: 1;
     animation: sparkle 3s ease-in Infinite Alternate;
   }
   @keyframes sparkle {
@@ -427,8 +427,8 @@ onUnmounted(() => {
   .code_link {
     display: inline-block;
     margin-top: 1rem;
-    color: #4f7cff;
     font-size: 1rem;
+    color: #4f7cff;
     text-decoration: underline;
   }
   @include media-breakpoint-up {
@@ -449,20 +449,20 @@ onUnmounted(() => {
 .api_badge {
   margin-left: 0.5rem;
   padding: 0.2rem 0.5rem;
-  font-size: 0.7em;
-  border-radius: 4px;
   background: #111;
+  border-radius: 4px;
+  font-size: 0.7em;
   color: #fff;
 }
 
 .mop_wrap {
+  grid-area: mop;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  grid-area: mop;
-  transition: none;
   font-size: clamp(1rem, 2vw, 1.4rem);
   text-align: center;
   line-height: 1.6;
+  transition: none;
 }
 .btn_more {
   @extend %anchor;

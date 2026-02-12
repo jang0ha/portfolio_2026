@@ -199,17 +199,17 @@ const { image } = useResponsiveImage(project.value.images);
 }
 
 .project_sort {
-  margin-bottom: 10rem;
   height: auto;
+  margin-bottom: 10rem;
   .sort {
+    margin-bottom: 0.5rem;
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
   }
   .name {
+    margin-bottom: 1rem;
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
   }
   .project_links {
     display: flex;
@@ -217,8 +217,8 @@ const { image } = useResponsiveImage(project.value.images);
     font-size: 1rem;
     line-height: 1.6;
     .links {
-      width: max-content;
       @extend %anchor;
+      width: max-content;
       font-weight: normal;
       color: var(--gray-color);
       transition: color 0.2s;
@@ -304,15 +304,15 @@ const { image } = useResponsiveImage(project.value.images);
   td {
     padding: 0.4rem 0;
     border-top: 1px solid var(--border-color);
-    vertical-align: top;
     text-align: left;
+    vertical-align: top;
   }
   th + td {
     padding-left: 2rem;
   }
   li {
-    list-style-type: disc;
     margin-left: 1.8rem;
+    list-style-type: disc;
   }
   tbody {
     tr:first-child {
@@ -331,13 +331,13 @@ const { image } = useResponsiveImage(project.value.images);
 .project_description_wrap {
   margin-top: 2rem;
   .btn_more {
-    color: var(--text-color);
     @extend %anchor;
     justify-content: space-between;
     width: 100%;
     padding: 0.8rem 0;
     border-top: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
+    color: var(--text-color);
     transition: border-top 0.2s border-bottom 0.2s;
     &::before {
       display: none;
@@ -369,9 +369,9 @@ const { image } = useResponsiveImage(project.value.images);
 .project_images {
   position: relative;
   //padding-bottom: 68%;
-  margin-top: 2rem;
   width: 100%;
   height: 30rem;
+  margin-top: 2rem;
   overflow: hidden;
   [data-theme='dark'] & {
     &::after {
@@ -412,8 +412,8 @@ const { image } = useResponsiveImage(project.value.images);
     transition: opacity 0.3s;
   }
   @include media-breakpoint-up {
-    height: 70rem;
     grid-area: images;
+    height: 70rem;
     margin-top: 0;
     .project_img {
       transition-duration: 10s;
@@ -429,12 +429,12 @@ const { image } = useResponsiveImage(project.value.images);
 }
 
 .nav_others_wrap {
-  margin-top: 4rem;
   grid-area: nav;
+  margin-top: 4rem;
   .nav_title {
     padding-bottom: 0.4rem;
-    font-size: 1.2rem;
     border-bottom: 1px solid var(--text-color);
+    font-size: 1.2rem;
   }
   .project_list {
     li {
@@ -444,8 +444,8 @@ const { image } = useResponsiveImage(project.value.images);
         border-bottom: 1px solid var(--border-color);
       }
       a {
-        padding: 0.8rem 0;
         width: 100%;
+        padding: 0.8rem 0;
         &:hover,
         &:active {
           background-color: var(--primary-color);

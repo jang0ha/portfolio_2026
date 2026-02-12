@@ -8,13 +8,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-weight: 700;
-  touch-action: manipulation;
   border: 0;
-  text-align: center;
-  cursor: pointer;
   background: none;
+  font-weight: 700;
+  text-align: center;
   color: var(--text-color);
+  touch-action: manipulation;
+  cursor: pointer;
 }
 
 // //오른쪽 화살표 있는 버튼
