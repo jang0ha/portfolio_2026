@@ -51,7 +51,7 @@
       있습니다.
     </p>
     <NuxtLink
-      to="https://jang0ha.notion.site/2026-2fd12b81902a809e9e4efaaf347069dd?source=copy_link"
+      to="https://jang0ha.notion.site/a4645bc3e9d04441a41bac827c371ad8?v=07da49a6382f48de94896874ea9e7c60&source=copy_link"
       target="_blank"
       :title="`포트폴리오 설명 노션으로 새창이동`"
       rel="noopener"
