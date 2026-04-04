@@ -118,5 +118,25 @@
     "projectKey": "etc",
     "label": "페이지 커스터마이징",
     "description": "Zendesk SaaS 플랫폼 구조 분석 (DOM, 클래스 규칙) 후 기존 구조 유지하는 방식으로 디자인 적용"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "PRD 수립",
+    "description": "Task-master 통해 제품 요구 사항 정의서(PRD) 작성 및 Claude Code 기초 설계 수정"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "Swiper 인터페이스 최적화",
+    "description": "추천 상품 슬라이드 컨테이너 대비 이미지 크롭 및 높이 불일치 문제 해결\nSwiper 레이아웃 재설계를 통한 반응형 콘텐츠 정렬"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "컴포넌트 구조 개선",
+    "description": "LoadingDots 컴포넌트를 MessageBubble 내부로 캡슐화\nAI 로딩 상태(isLoading) 기반 조건부 렌더링 로직 구현\n초기화 버튼[RESET]을 전역 헤더에서 채팅 영역 전용 헤더로 이동 (UX 개선)"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "입력 영역 정렬",
+    "description": "Flexbox align-items: center 적용\n채팅 입력창 내 전송 버튼과 텍스트 입력창 시각적 중앙 정렬"
   }
 ]

@@ -61,5 +61,14 @@
     "tech": "GSAP",
     "language": "KO",
     "period": "2023.01.25~2023.01.27 (총 2md)"
+  },
+  {
+    "projectKey": "insurance",
+    "type": "바이브코딩",
+    "people": "1명",
+    "contribution": "-",
+    "tech": "Claude, Task-master, Gemini API, React, styled-components",
+    "language": "KO",
+    "period": "2026.04.05 (총 1md)"
   }
 ]

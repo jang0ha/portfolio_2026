@@ -113,7 +113,10 @@
       <h3 class="nav_title">Other Projects</h3>
       <ul class="project_list">
         <li v-for="item in otherProjects" :key="item.key" class="project_item">
-          <NuxtLink :to="`/projects/${item.key}`" :title="`${item.title} 페이지로 이동`">
+          <NuxtLink
+            :to="item.category === 'personal' ? `/projects/personal/${item.key}` : `/projects/${item.key}`"
+            :title="`${item.title} 페이지로 이동`"
+          >
             <span class="sort">{{ item.sort }}</span>
             <strong class="title">{{ item.title }}</strong>
           </NuxtLink>
@@ -152,13 +155,19 @@ const btnMoreToggle = () => {
 
 // 프로젝트 데이터 - 속성이 변했을때 감지하고 자동으로 다시 연산하기 위해서 computed 사용
 // 현재 프로젝트 key
-const projectKey = route.params.name;
+// slug 배열에서 마지막 요소가 projectKey
+// /projects/hiveplatform → slug = ['hiveplatform']
+// /projects/personal/insurance → slug = ['personal', 'insurance']
+const projectKey = computed(() => {
+  const slug = route.params.slug;
+  return Array.isArray(slug) ? slug[slug.length - 1] : slug;
+});
 
 // 현재 프로젝트
-const project = computed(() => getProject(projectKey));
+const project = computed(() => getProject(projectKey.value));
 
 // 다른 프로젝트들 (현재 제외)
-const otherProjects = computed(() => getOtherProjects(projectKey));
+const otherProjects = computed(() => getOtherProjects(projectKey.value));
 
 // 프로젝트가 없으면 404 처리
 if (!project.value) {

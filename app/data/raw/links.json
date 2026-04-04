@@ -44,5 +44,20 @@
     "projectKey": "etc",
     "label": "zendesk website",
     "url": "https://help.kakaoenterprise.com/hc/ko"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "Website",
+    "url": "https://insurance-ai-nu.vercel.app/"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/ai-33612b81902a8074b730d2bced9e36c3?source=copy_link"
+  },
+  {
+    "projectKey": "insurance",
+    "label": "GitHub",
+    "url": "https://github.com/jang0ha/react-insurance-app?tab=readme-ov-file"
   }
 ]

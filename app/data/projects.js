@@ -11,6 +11,7 @@ const result = {};
 projects.forEach((project) => {
   result[project.projectKey] = {
     key: project.projectKey,
+    category: project.category || 'company',
     sort: project.sort,
     title: project.title,
     links: [],

@@ -1,37 +1,50 @@
 [
   {
     "projectKey": "hiveplatform",
+    "category": "company",
     "sort": "Nuxt.js / Frontend",
     "title": "하이브 플랫폼 웹사이트"
   },
   {
     "projectKey": "thestarlight",
+    "category": "company",
     "sort": "GSAP Scroll Animation",
     "title": "더 스타라이트 브랜드사이트"
   },
   {
     "projectKey": "gc",
+    "category": "company",
     "sort": "GSAP Scroll Animation",
     "title": "GC 녹십자 채용 사이트"
   },
   {
     "projectKey": "cau",
+    "category": "company",
     "sort": "웹 접근성 / Web Accessibility",
     "title": "중앙대 원격미래교육원 사이트"
   },
   {
     "projectKey": "event",
+    "category": "company",
     "sort": "Interactive Event Page",
     "title": "게임 이벤트 페이지"
   },
   {
     "projectKey": "admin",
+    "category": "company",
     "sort": "CMS / Admin Panel",
     "title": "삼성 갤럭시 SPEC 관리 사이트"
   },
   {
     "projectKey": "etc",
+    "category": "company",
     "sort": "Zendesk SaaS Platform",
     "title": "카카오 엔터프라이즈 고객지원"
+  },
+  {
+    "projectKey": "insurance",
+    "category": "personal",
+    "sort": "personal",
+    "title": "[바이브코딩]보험추천 AI"
   }
 ]

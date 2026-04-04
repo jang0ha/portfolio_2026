@@ -118,5 +118,22 @@
   {
     "projectKey": "etc",
     "text": "SaaS 환경 제약을 고려한 공통 UI 패턴 정의 및 운영 가능한 디자인 시스템 구축 (Kakao Enterprise 고객지원센터)"
+  },
+
+  {
+    "projectKey": "insurance",
+    "text": "AI 서비스 전용 공통 컴포넌트 시스템 구축 (챗봇 인터페이스, 메시지 버블, 로딩 인디케이터 등) 및 재사용성 확보"
+  },
+  {
+    "projectKey": "insurance",
+    "text": "Task-master를 활용하여 아이디어를 빠르게 실체화하여(prd 수립) UI/UX의 흐름을 먼저 검증하고, 핵심 로직에 집중하여 개발하는 방식으로 프로젝트 진행"
+  },
+  {
+    "projectKey": "insurance",
+    "text": "AI → 세세한 문법 구현 & 본인 → 컴포넌트 간의 의존성이나 데이터 흐름 같은 큰그림을 설계"
+  },
+  {
+    "projectKey": "insurance",
+    "text": "(코드 리뷰어로서) AI가 짠 코드를 그대로 수용하지 않고, 성능(Performance)이나 유지보수성 측면에서 더 나은 대안을 직접 제시하고 수정"
   }
 ]

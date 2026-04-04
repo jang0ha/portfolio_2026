@@ -70,5 +70,11 @@
     "device": "pc",
     "src": "/images/project/etc/pc.png",
     "alt": "etc visual pc"
+  },
+  {
+    "projectKey": "insurance",
+    "device": "pc",
+    "src": "/images/project/insurance/pc.png",
+    "alt": "insurance visual pc"
   }
 ]
