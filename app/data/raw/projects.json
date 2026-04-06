@@ -1,5 +1,17 @@
 [
   {
+    "projectKey": "insurance",
+    "category": "personal",
+    "sort": "[개인프로젝트] 바이브코딩",
+    "title": "보험 AI 어시스턴트"
+  },
+  {
+    "projectKey": "hotel",
+    "category": "personal",
+    "sort": "[개인프로젝트] Databinding/인증/관리자 페이지",
+    "title": "호텔 예약 플랫폼"
+  },
+  {
     "projectKey": "hiveplatform",
     "category": "company",
     "sort": "Nuxt.js / Frontend",
@@ -40,11 +52,5 @@
     "category": "company",
     "sort": "Zendesk SaaS Platform",
     "title": "카카오 엔터프라이즈 고객지원"
-  },
-  {
-    "projectKey": "insurance",
-    "category": "personal",
-    "sort": "personal /[바이브코딩]",
-    "title": "보험 AI 어시스턴트"
   }
 ]

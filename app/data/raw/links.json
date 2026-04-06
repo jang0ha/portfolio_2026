@@ -59,5 +59,20 @@
     "projectKey": "insurance",
     "label": "GitHub",
     "url": "https://github.com/jang0ha/react-insurance-app?tab=readme-ov-file"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "Website",
+    "url": "https://react-hotel-booking-wheat.vercel.app/"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "Notion",
+    "url": "https://jang0ha.notion.site/react-32a12b81902a8039ab2ecb5effb97577?source=copy_link"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "GitHub",
+    "url": "https://github.com/jang0ha/react-booking-wep/tree/main"
   }
 ]

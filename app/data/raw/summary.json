@@ -70,5 +70,14 @@
     "tech": "Claude, Task-master, Gemini API, React, styled-components",
     "language": "KO",
     "period": "2026.04.05 (총 1md)"
+  },
+  {
+    "projectKey": "hotel",
+    "type": "반응형",
+    "people": "1명",
+    "contribution": "100%",
+    "tech": "React, tailwindcss, Clerk(인증), prebuiltui(컴포넌트 라이브러리)",
+    "language": "EN",
+    "period": "2026.03.19 (총 4md)"
   }
 ]

@@ -138,5 +138,30 @@
     "projectKey": "insurance",
     "label": "입력 영역 정렬",
     "description": "Flexbox align-items: center 적용\n채팅 입력창 내 전송 버튼과 텍스트 입력창 시각적 중앙 정렬"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "메인 페이지",
+    "description": "추천 호텔 리스트 및 검색 인터페이스 구현"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "호텔 리스트",
+    "description": "호텔 리스트 페이지 구현, 필터링 기능(룸타입, 가격순) 포함"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "호텔 상세",
+    "description": "객실 정보 상세 조회, 대표 이미지 인터페이스 구현"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "관리자 페이지",
+    "description": "호텔 등록, 수정, 삭제 및 전체 예약 현황 대시보드 설계 및 구현"
+  },
+  {
+    "projectKey": "hotel",
+    "label": "관리자 인증",
+    "description": "클럭 로그인을 통한 관리자 인증"
   }
 ]

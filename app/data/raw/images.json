@@ -76,5 +76,17 @@
     "device": "pc",
     "src": "/images/project/insurance/pc.png",
     "alt": "insurance visual pc"
+  },
+  {
+    "projectKey": "hotel",
+    "device": "pc",
+    "src": "/images/project/hotel/pc.png",
+    "alt": "hotel visual pc"
+  },
+  {
+    "projectKey": "hotel",
+    "device": "mobile",
+    "src": "/images/project/hotel/mobile.png",
+    "alt": "hotel visual mobile"
   }
 ]

@@ -135,5 +135,25 @@
   {
     "projectKey": "insurance",
     "text": "(코드 리뷰어로서) AI가 짠 코드를 그대로 수용하지 않고, 성능(Performance)이나 유지보수성 측면에서 더 나은 대안을 직접 제시하고 수정"
+  },
+  {
+    "projectKey": "hotel",
+    "text": "호텔 예약 플랫폼 (react.js기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트 진행"
+  },
+  {
+    "projectKey": "hotel",
+    "text": "동적 UI 렌더링 구현 (예약 정보, 객실 상세, 사용자 리뷰 등)"
+  },
+  {
+    "projectKey": "hotel",
+    "text": "반응형 웹 디자인 적용으로 데스크탑 및 모바일 최적화 대응"
+  },
+  {
+    "projectKey": "hotel",
+    "text": "사용자 경험(UX) 중심의 직관적인 예약 프로세스 및 필터링 시스템 구축"
+  },
+  {
+    "projectKey": "hotel",
+    "text": "Clerk을 사용한 안전한 인증을 제공"
   }
 ]
