@@ -6,6 +6,12 @@
     "title": "보험 AI 어시스턴트"
   },
   {
+    "projectKey": "portfolio-admin",
+    "category": "personal",
+    "sort": "[개인프로젝트] CRUD",
+    "title": "프로젝트 관리 Admin Panel"
+  },
+  {
     "projectKey": "hotel",
     "category": "personal",
     "sort": "[개인프로젝트] Databinding/인증/관리자 페이지",
@@ -44,7 +50,7 @@
   {
     "projectKey": "admin",
     "category": "company",
-    "sort": "CMS / Admin Panel",
+    "sort": "Admin Panel",
     "title": "삼성 갤럭시 SPEC 관리 사이트"
   },
   {

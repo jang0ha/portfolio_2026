@@ -79,5 +79,14 @@
     "tech": "React, tailwindcss, Clerk(인증), prebuiltui(컴포넌트 라이브러리)",
     "language": "EN",
     "period": "2026.03.19 (총 4md)"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "type": "반응형",
+    "people": "1명",
+    "contribution": "100%",
+    "tech": "React, tailwindcss, Styled-Components",
+    "language": "KO",
+    "period": "2026.04.06 ~ 2026.04.07 (총 2md)"
   }
 ]

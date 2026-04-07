@@ -188,15 +188,6 @@ const groupedProjects = computed(() => {
     height: 100% !important;
     opacity: 0 !important;
     transition: opacity 0.4s ease;
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 50%;
-      z-index: -1;
-      width: 100%;
-      height: 20rem;
-      background-color: var(--background-inversion-color);
-    }
   }
   .swiper-slide-active {
     opacity: 1 !important;

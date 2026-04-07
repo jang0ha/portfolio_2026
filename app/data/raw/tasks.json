@@ -122,7 +122,7 @@
 
   {
     "projectKey": "insurance",
-    "text": "AI 서비스 전용 공통 컴포넌트 시스템 구축 (챗봇 인터페이스, 메시지 버블, 로딩 인디케이터 등) 및 재사용성 확보"
+    "text": "LLM(대규모 언어 모델 - Gemini) 활용하여 사용자와의 대화를 통해 알맞은 보험 분석 및 추천 프로젝트"
   },
   {
     "projectKey": "insurance",
@@ -138,7 +138,7 @@
   },
   {
     "projectKey": "hotel",
-    "text": "호텔 예약 플랫폼 (react.js기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트 진행"
+    "text": "호텔 예약 플랫폼 (react기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트 진행"
   },
   {
     "projectKey": "hotel",
@@ -155,5 +155,25 @@
   {
     "projectKey": "hotel",
     "text": "Clerk을 사용한 안전한 인증을 제공"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "text": "개인/회사 포트폴리오 프로젝트를 효율적으로 관리할 수 있는 관리자 대시보드"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "text": "컴포넌트 단위 연습 및 데이터 바인딩 연습(상태값에 따라 출력)"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "text": "로그인 기반 라우트 설정"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "text": "LocalStorage 및 IndexedDB 활용하여 데이터 임시 저장"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "text": "Base컴포넌트를 작은단위로 분할하여 일관된 UI 컴포넌트 구축"
   }
 ]

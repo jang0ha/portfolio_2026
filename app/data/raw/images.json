@@ -88,5 +88,17 @@
     "device": "mobile",
     "src": "/images/project/hotel/mobile.png",
     "alt": "hotel visual mobile"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "device": "pc",
+    "src": "/images/project/portfolio-admin/pc.png",
+    "alt": "portfolio-admin visual pc"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "device": "mobile",
+    "src": "/images/project/portfolio-admin/mobile.png",
+    "alt": "portfolio-admin visual mobile"
   }
 ]

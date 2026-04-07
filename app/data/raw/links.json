@@ -74,5 +74,16 @@
     "projectKey": "hotel",
     "label": "GitHub",
     "url": "https://github.com/jang0ha/react-booking-wep/tree/main"
+  },
+  {
+    "projectKey": "portfolio-admin",
+    "label": "Website",
+    "url": "https://react-portfolio2026-admin-front.vercel.app"
+  },
+
+  {
+    "projectKey": "portfolio-admin",
+    "label": "GitHub",
+    "url": "https://github.com/jang0ha/react-portfolio2026-admin-front"
   }
 ]
