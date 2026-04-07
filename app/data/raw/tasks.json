@@ -138,7 +138,7 @@
   },
   {
     "projectKey": "hotel",
-    "text": "호텔 예약 플랫폼 (react기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트 진행"
+    "text": "호텔 예약 플랫폼 (react기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트"
   },
   {
     "projectKey": "hotel",
@@ -162,7 +162,7 @@
   },
   {
     "projectKey": "portfolio-admin",
-    "text": "컴포넌트 단위 연습 및 데이터 바인딩 연습(상태값에 따라 출력)"
+    "text": "목적 : 컴포넌트 단위 연습 및 데이터 바인딩 연습(상태값에 따라 출력)"
   },
   {
     "projectKey": "portfolio-admin",
@@ -174,6 +174,6 @@
   },
   {
     "projectKey": "portfolio-admin",
-    "text": "Base컴포넌트를 작은단위로 분할하여 일관된 UI 컴포넌트 구축"
+    "text": "컴포넌트를 작은단위로 분할하여 일관된 UI 컴포넌트 구축"
   }
 ]
