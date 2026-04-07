@@ -122,12 +122,19 @@ const groupedProjects = computed(() => {
 .index_wrap {
   font-size: clamp(1.2rem, 2vw, 1.2rem);
   overflow: hidden;
-  @include media-breakpoint-up {
+  display: block;
+  @include media-breakpoint-up-sm {
     display: grid;
     grid-template-areas:
       'index index index index index'
-      'hero hero hero project project';
+      'hero hero hero hero hero'
+      '- - project project project';
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+  @include media-breakpoint-up-lg {
+    grid-template-areas:
+      'index index index index index'
+      'hero hero hero project project';
   }
 }
 .inform_wrap {
@@ -228,15 +235,28 @@ const groupedProjects = computed(() => {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 1rem 0;
   border-top: 1px solid var(--border-color);
   > span {
     flex: none;
   }
+  .projects {
+    font-size: 1.4rem;
+  }
+  @include media-breakpoint-up {
+    flex-direction: row;
+    span {
+      width: 50%;
+    }
+    .projects {
+      width: 50%;
+      padding-left: 2rem;
+    }
+  }
 }
 .projects {
-  padding-left: 2rem;
-  width: 60%;
+  //padding-left: 2rem;
 }
 .project_link {
   display: flex;
