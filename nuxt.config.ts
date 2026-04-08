@@ -38,7 +38,13 @@ export default defineNuxtConfig({
           content: '웹 퍼블리싱 & 프론트엔드 포트폴리오',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'modulepreload',
+          href: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.js',
+        },
+      ],
     },
   },
   components: [

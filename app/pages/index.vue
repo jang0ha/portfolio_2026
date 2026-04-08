@@ -13,8 +13,18 @@
     <section class="hero_wrap container">
       <h2 class="main_title">Portfolio.</h2>
       <article class="hero_swiper_wrap">
+        <!-- Placeholder for LCP optimization -->
+        <template v-if="!swiperReady">
+          <h3 class="hero_title hero_title--placeholder">{{ slides[0].title }}</h3>
+          <p class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</p>
+        </template>
         <ClientOnly>
-          <swiper-container ref="containerRef" :init="false" class="hero_swiper_container">
+          <swiper-container
+            ref="containerRef"
+            :init="false"
+            class="hero_swiper_container"
+            @swiper="onSwiperReady"
+          >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
               <h3 class="hero_title">{{ slide.title }}</h3>
               <p class="hero_desc">{{ slide.desc }}</p>
@@ -78,7 +88,10 @@ const slides = ref([
   },
 ]);
 
-const swiper = useSwiper(containerRef, {
+const swiperReady = ref(false);
+
+//Swiper 설정 (최적화: 사전 컴파일)
+const swiperConfig = {
   effect: 'fade',
   fadeEffect: {
     crossFade: true,
@@ -88,11 +101,16 @@ const swiper = useSwiper(containerRef, {
   autoplay: {
     delay: 2500,
   },
-});
+};
 
-//onMounted(() => {
-//  console.log(swiper.instance);
-//});
+const swiper = useSwiper(containerRef, swiperConfig);
+
+// swiper 초기화 감지
+watch(() => swiper?.instance, (instance) => {
+  if (instance) {
+    swiperReady.value = true;
+  }
+}, { immediate: true });
 
 //프로젝트 링크 가기
 import { useProjects } from '@/composables/useProjects';
@@ -182,6 +200,9 @@ const groupedProjects = computed(() => {
     // mix-blend-mode: color-burn;
     mix-blend-mode: exclusion;
   }
+  .hero_title--placeholder {
+    animation: none;
+  }
   .hero_desc {
     padding: 0 1vw;
     margin-top: 1rem;
@@ -189,6 +210,9 @@ const groupedProjects = computed(() => {
     font-weight: 300;
     color: var(--gray-color);
     mix-blend-mode: color-burn;
+  }
+  .hero_desc--placeholder {
+    animation: none;
   }
   .swiper-slide {
     position: relative;

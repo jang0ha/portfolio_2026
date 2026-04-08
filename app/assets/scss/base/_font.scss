@@ -1,127 +1,104 @@
+/* noto-serif-kr-300 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-ExtraLight.ttf') format('truetype');
-  font-weight: 100;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-Light.ttf') format('truetype');
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-regular - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-Regular.ttf') format('truetype');
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-500 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-Medium.ttf') format('truetype');
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-600 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-SemiBold.ttf') format('truetype');
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-700 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-Bold.ttf') format('truetype');
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-800 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-ExtraBold.ttf') format('truetype');
+  font-style: normal;
   font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-kr-900 - korean */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif KR';
-  src: url('/fonts/NotoSerifKR-Black.ttf') format('truetype');
+  font-style: normal;
   font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-kr-v31-korean-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-300 - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Thin.ttf') format('truetype');
-  font-weight: 100;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Light.ttf') format('truetype');
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-v33-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-regular - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Regular.ttf') format('truetype');
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-500 - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Medium.ttf') format('truetype');
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-v33-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-600 - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Bold.ttf') format('truetype');
-  font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-weight: 600;
+  src: url('/fonts/noto-serif-v33-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-800 - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-ExtraBold.ttf') format('truetype');
+  font-style: normal;
   font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+  src: url('/fonts/noto-serif-v33-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* noto-serif-900 - latin */
 @font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Noto Serif';
-  src: url('/fonts/NotoSerif-Black.ttf') format('truetype');
-  font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-weight: 900;
+  src: url('/fonts/noto-serif-v33-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
