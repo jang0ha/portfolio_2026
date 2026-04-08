@@ -54,10 +54,10 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          rel: 'modulepreload',
-          href: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.js',
-        },
+        //{
+        //  rel: 'modulepreload',
+        //  href: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.js',
+        //},
       ],
     },
   },
