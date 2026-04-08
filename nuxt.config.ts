@@ -4,17 +4,24 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   features: {
-    inlineStyles: false,
+    inlineStyles: true, //스타일 순서 나타내려면 fasle , features.inlineStyles를 활성화하여 렌더링 차단 리소스를 최소화
   },
   postcss: {
     plugins: {
       cssnano: {
-        preset: ['default', { cssDeclarationSorter: false }],
+        preset: [
+          'default',
+          {
+            cssDeclarationSorter: false,
+            discardComments: { removeAll: true }, // 모든 주석 제거 (용량 최적화)
+          },
+        ],
       },
     },
   },
   nitro: {
     routeRules: {
+      '/': { prerender: true }, // 메인 페이지를 사전 렌더링하면 스타일 추출이 더 정확해집니다.
       '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
       '/fonts/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
       '/img/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
