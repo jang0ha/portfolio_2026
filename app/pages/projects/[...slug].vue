@@ -105,7 +105,7 @@
     <!-- 프로젝트 이미지 -->
     <!-- 이미지 Images -->
     <article class="project_images" v-if="image">
-      <img :src="image.src" :alt="image.alt" class="project_img" />
+      <img :src="image.src" :alt="image.alt" class="project_img" fetchpriority="high" />
     </article>
 
     <!-- 현제 페이지 외 나머지 프로젝트 네비게이션 -->
@@ -114,7 +114,11 @@
       <ul class="project_list">
         <li v-for="item in otherProjects" :key="item.key" class="project_item">
           <NuxtLink
-            :to="item.category === 'personal' ? `/projects/personal/${item.key}` : `/projects/${item.key}`"
+            :to="
+              item.category === 'personal'
+                ? `/projects/personal/${item.key}`
+                : `/projects/${item.key}`
+            "
             :title="`${item.title} 페이지로 이동`"
           >
             <span class="sort">{{ item.sort }}</span>
