@@ -74,7 +74,7 @@ export default defineNuxtConfig({
         },
         {
           rel: 'preload',
-          href: '/fonts/noto-serif-kr-v31-korean-900.woff2',
+          href: '/fonts/noto-serif-kr-v31-korean-500.woff2',
           as: 'font',
           type: 'font/woff2',
           crossorigin: 'anonymous',

@@ -140,149 +140,94 @@ let ctx = null;
 let mm = null;
 let mobileObserver = null;
 
-const initMobileObserver = () => {
-  const { $gsap } = useNuxtApp();
-
-  const section = sectionRef.value;
-  if (!section) return;
-
-  const cards = section.querySelectorAll('.stack_card');
-  if (!cards.length) return;
-
-  // 초기 상태
-  $gsap.set(cards, {
-    opacity: 0,
-    y: 40,
-    scale: 1,
-  });
-
-  mobileObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        $gsap.to(entry.target, {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          ease: 'power2.out',
-        });
-
-        mobileObserver.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.25,
-      rootMargin: '0px 0px -10% 0px',
-    }
-  );
-
-  cards.forEach((card) => mobileObserver.observe(card));
-};
-
-const initDesktopScroll = () => {
-  const { $gsap, $ScrollTrigger } = useNuxtApp();
-
-  const section = sectionRef.value;
-  if (!section) return;
-
-  const cards = section.querySelectorAll('.stack_card');
-  if (!cards.length) return;
-
-  ctx = $gsap.context(() => {
-    const cardHeight = cards[0].offsetHeight;
-    const STACK_GAP = 40;
-    const totalSteps = cards.length + 1;
-    const CARD_SCROLL = (cardHeight + STACK_GAP) * totalSteps;
-
-    // 초기 상태
-    $gsap.set(cards, {
-      opacity: 0,
-      y: (i) => i * STACK_GAP * 3,
-      scale: 0.96,
-    });
-
-    const tl = $gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        start: 'top top',
-        end: `+=${CARD_SCROLL}`,
-        scrub: true,
-        pin: true,
-        invalidateOnRefresh: true,
-        markers: false,
-
-        onUpdate(self) {
-          // 스크롤 안내 텍스트
-          $gsap.set(scrollText.value, {
-            autoAlpha: self.progress > 0.95 ? 0 : 1,
-          });
-
-          // 엔딩 텍스트
-          $gsap.set(endingText.value, {
-            autoAlpha: self.progress > 0.1 ? 1 : 0,
-          });
-        },
-      },
-    });
-
-    cards.forEach((card, index) => {
-      tl.to(card, {
-        opacity: 1,
-        y: index * STACK_GAP,
-        scale: 1,
-        ease: 'power2.out',
-      });
-
-      if (index > 0) {
-        tl.to(
-          cards[index - 1],
-          {
-            scale: 0.9,
-            ease: 'power2.out',
-          },
-          '<'
-        );
-      }
-    });
-
-    // 마지막 카드 정리
-    tl.to(cards[cards.length - 1], {
-      scale: 0.9,
-      ease: 'power2.out',
-    });
-  }, section);
-
-  $ScrollTrigger.refresh();
-};
-const initScrollAnimation = () => {
+// 1. 초기화 함수를 비동기로 변경하여 라이브러리를 로드합니다.
+const initScrollAnimation = async () => {
   if (!process.client) return;
 
-  const { $ScrollTrigger } = useNuxtApp();
+  // 필요한 시점에만 GSAP 로드 (번들 최적화의 핵심)
+  const { gsap } = await import('gsap');
+  const { ScrollTrigger } = await import('gsap/ScrollTrigger');
 
-  $ScrollTrigger.matchMedia({
-    // Desktop
+  gsap.registerPlugin(ScrollTrigger);
+
+  ScrollTrigger.matchMedia({
+    // Desktop: 스택 애니메이션
     '(min-width: 769px)': () => {
-      initDesktopScroll();
+      const section = sectionRef.value;
+      if (!section) return;
+      const cards = section.querySelectorAll('.stack_card');
+      if (!cards.length) return;
 
-      return () => {
-        if (ctx) {
-          ctx.revert();
-          ctx = null;
-        }
-      };
+      ctx = gsap.context(() => {
+        const cardHeight = cards[0].offsetHeight;
+        const STACK_GAP = 40;
+        const totalSteps = cards.length + 1;
+        const CARD_SCROLL = (cardHeight + STACK_GAP) * totalSteps;
+
+        gsap.set(cards, {
+          opacity: 0,
+          y: (i) => i * STACK_GAP * 3,
+          scale: 0.96,
+        });
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: 'top top',
+            end: `+=${CARD_SCROLL}`,
+            scrub: true,
+            pin: true,
+            invalidateOnRefresh: true,
+          },
+        });
+
+        // 텍스트 페이드 로직을 timeline에 포함시켜 onUpdate 오버헤드를 줄입니다.
+        tl.to(scrollText.value, { autoAlpha: 0, duration: 0.1 }, 0.95);
+        tl.to(endingText.value, { autoAlpha: 1, duration: 0.1 }, 0.1);
+
+        cards.forEach((card, index) => {
+          tl.to(card, {
+            opacity: 1,
+            y: index * STACK_GAP,
+            scale: 1,
+            ease: 'power2.out',
+          });
+          if (index > 0) {
+            tl.to(cards[index - 1], { scale: 0.9, ease: 'power2.out' }, '<');
+          }
+        });
+        tl.to(cards[cards.length - 1], { scale: 0.9, ease: 'power2.out' });
+      }, section);
+
+      return () => ctx?.revert();
     },
 
-    // Mobile
+    // Mobile: 단순 페이드인 (IntersectionObserver 활용)
     '(max-width: 768px)': () => {
-      initMobileObserver();
+      const cards = sectionRef.value?.querySelectorAll('.stack_card');
+      if (!cards?.length) return;
 
-      return () => {
-        if (mobileObserver) {
-          mobileObserver.disconnect();
-          mobileObserver = null;
-        }
-      };
+      gsap.set(cards, { opacity: 0, y: 40 });
+
+      mobileObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              gsap.to(entry.target, {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power2.out',
+              });
+              mobileObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
+      );
+
+      cards.forEach((card) => mobileObserver.observe(card));
+      return () => mobileObserver?.disconnect();
     },
   });
 };
