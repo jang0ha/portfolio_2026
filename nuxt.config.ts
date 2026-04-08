@@ -6,6 +6,13 @@ export default defineNuxtConfig({
   features: {
     inlineStyles: true, //스타일 순서 나타내려면 fasle , features.inlineStyles를 활성화하여 렌더링 차단 리소스를 최소화
   },
+  vite: {
+    build: {
+      // CSS를 별도 파일로 하나만 뽑아내도록 설정
+      //특정 크기 이상의 스타일만 외부 파일로 빼고, 나머지는 인라이닝하지 않도록 설정하여 '한 번만 로드'되는 구조를 만듭니다. (Vite 설정 활용)
+      cssCodeSplit: false,
+    },
+  },
   postcss: {
     plugins: {
       cssnano: {

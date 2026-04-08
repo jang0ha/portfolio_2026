@@ -394,10 +394,10 @@ const { image } = useResponsiveImage(project.value.images);
   }
 
   .project_img {
-		width: 100%;
-  	height: auto;
-  	aspect-ratio: 16 / 9; /* 이미지의 실제 비율에 맞춰 설정 (예: 1920/1080) */
-  	object-fit: cover;    /* 영역을 꽉 채우도록 설정 *
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* 이미지의 실제 비율에 맞춰 설정 (예: 1920/1080) */
+    object-fit: cover; /* 영역을 꽉 채우도록 설정 */
     max-width: none;
     transform: translateY(0);
     transition-property: transform;
