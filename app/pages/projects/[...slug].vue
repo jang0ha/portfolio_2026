@@ -232,6 +232,7 @@ const { image } = useResponsiveImage(project.value.images);
     .links {
       @extend %anchor;
       width: max-content;
+      padding: 0.2rem 0.4rem;
       font-weight: normal;
       color: var(--gray-color);
       transition: color 0.2s;
