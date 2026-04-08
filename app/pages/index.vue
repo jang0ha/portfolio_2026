@@ -14,9 +14,9 @@
       <h2 class="main_title">Portfolio.</h2>
       <article class="hero_swiper_wrap">
         <!-- Placeholder for LCP optimization -->
-        <template v-if="!swiperReady">
-          <h3 class="hero_title hero_title--placeholder">{{ slides[0].title }}</h3>
-          <p class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</p>
+        <template v-show="!swiperReady">
+          <div class="hero_title hero_title--placeholder">{{ slides[0].title }}</div>
+          <span class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</span>
         </template>
         <ClientOnly>
           <swiper-container
@@ -26,8 +26,8 @@
             @swiper="onSwiperReady"
           >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
-              <h3 class="hero_title">{{ slide.title }}</h3>
-              <p class="hero_desc">{{ slide.desc }}</p>
+              <div class="hero_title">{{ slide.title }}</div>
+              <span class="hero_desc">{{ slide.desc }}</span>
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
@@ -106,11 +106,15 @@ const swiperConfig = {
 const swiper = useSwiper(containerRef, swiperConfig);
 
 // swiper 초기화 감지
-watch(() => swiper?.instance, (instance) => {
-  if (instance) {
-    swiperReady.value = true;
-  }
-}, { immediate: true });
+watch(
+  () => swiper?.instance,
+  (instance) => {
+    if (instance) {
+      swiperReady.value = true;
+    }
+  },
+  { immediate: true }
+);
 
 //프로젝트 링크 가기
 import { useProjects } from '@/composables/useProjects';
@@ -191,9 +195,12 @@ const groupedProjects = computed(() => {
   color: var(--gray-color);
 }
 .hero_swiper_wrap {
+  aspect-ratio: 4 / 1; /* 혹은 4 / 3 등 디자인에 맞게 */
+  min-height: 15rem;
   .hero_title {
     margin-top: 2rem;
     font-size: clamp(4rem, 7vw, 10rem);
+    font-weight: 900;
     line-height: 1;
     color: var(--gray-color);
     //  -webkit-text-stroke: 2px var(--background-inversion-color);
@@ -207,7 +214,7 @@ const groupedProjects = computed(() => {
     padding: 0 1vw;
     margin-top: 1rem;
     font-size: clamp(1.2rem, 2vw, 2.4rem);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--gray-color);
     mix-blend-mode: color-burn;
   }
@@ -230,6 +237,7 @@ const groupedProjects = computed(() => {
     }
   }
   @include media-breakpoint-up {
+    min-height: 25rem;
     .hero_title {
       margin-top: 10rem;
     }
