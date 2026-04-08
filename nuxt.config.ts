@@ -58,6 +58,20 @@ export default defineNuxtConfig({
         //  rel: 'modulepreload',
         //  href: 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.js',
         //},
+        {
+          rel: 'preload',
+          href: '/fonts/noto-serif-kr-v31-korean-regular.woff2', // 스크린샷 상단 폰트
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
+        {
+          rel: 'preload',
+          href: '/fonts/noto-serif-kr-v31-korean-900.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          crossorigin: 'anonymous',
+        },
       ],
     },
   },
