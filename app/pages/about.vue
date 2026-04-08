@@ -132,37 +132,44 @@ const stackItems = [
 		환경변수 전환만으로 개발/프로덕션 환경을 분리했습니다.`,
   },
 ];
+
 const sectionRef = ref(null);
 const scrollText = ref(null);
 const endingText = ref(null);
 
 let ctx = null;
-let mm = null;
 let mobileObserver = null;
+// Forced Reflow 방지: 높이값을 저장할 변수 선언
+let cachedCardHeight = 0;
 
-// 1. 초기화 함수를 비동기로 변경하여 라이브러리를 로드합니다.
 const initScrollAnimation = async () => {
   if (!process.client) return;
 
-  // 필요한 시점에만 GSAP 로드 (번들 최적화의 핵심)
-  const { gsap } = await import('gsap');
-  const { ScrollTrigger } = await import('gsap/ScrollTrigger');
+  // [3번 해결] Dynamic Import로 미사용 JS 절감
+  const [{ gsap }, { ScrollTrigger }] = await Promise.all([
+    import('gsap'),
+    import('gsap/ScrollTrigger'),
+  ]);
 
   gsap.registerPlugin(ScrollTrigger);
 
-  ScrollTrigger.matchMedia({
-    // Desktop: 스택 애니메이션
-    '(min-width: 769px)': () => {
-      const section = sectionRef.value;
-      if (!section) return;
-      const cards = section.querySelectorAll('.stack_card');
-      if (!cards.length) return;
+  const section = sectionRef.value;
+  if (!section) return;
+  const cards = section.querySelectorAll('.stack_card');
+  if (!cards.length) return;
 
+  // [1번 해결] Forced Reflow 방지:
+  // 애니메이션 타임라인 생성 전, 딱 한 번만 레이아웃 수치를 측정합니다.
+  cachedCardHeight = cards[0].offsetHeight;
+
+  ScrollTrigger.matchMedia({
+    // Desktop
+    '(min-width: 769px)': () => {
       ctx = gsap.context(() => {
-        const cardHeight = cards[0].offsetHeight;
         const STACK_GAP = 40;
         const totalSteps = cards.length + 1;
-        const CARD_SCROLL = (cardHeight + STACK_GAP) * totalSteps;
+        // 캐싱된 높이값 사용
+        const CARD_SCROLL = (cachedCardHeight + STACK_GAP) * totalSteps;
 
         gsap.set(cards, {
           opacity: 0,
@@ -181,7 +188,7 @@ const initScrollAnimation = async () => {
           },
         });
 
-        // 텍스트 페이드 로직을 timeline에 포함시켜 onUpdate 오버헤드를 줄입니다.
+        // onUpdate 대신 타임라인에 직접 추가하여 메인 스레드 부하 감소
         tl.to(scrollText.value, { autoAlpha: 0, duration: 0.1 }, 0.95);
         tl.to(endingText.value, { autoAlpha: 1, duration: 0.1 }, 0.1);
 
@@ -192,21 +199,20 @@ const initScrollAnimation = async () => {
             scale: 1,
             ease: 'power2.out',
           });
+
           if (index > 0) {
             tl.to(cards[index - 1], { scale: 0.9, ease: 'power2.out' }, '<');
           }
         });
+
         tl.to(cards[cards.length - 1], { scale: 0.9, ease: 'power2.out' });
       }, section);
 
       return () => ctx?.revert();
     },
 
-    // Mobile: 단순 페이드인 (IntersectionObserver 활용)
+    // Mobile
     '(max-width: 768px)': () => {
-      const cards = sectionRef.value?.querySelectorAll('.stack_card');
-      if (!cards?.length) return;
-
       gsap.set(cards, { opacity: 0, y: 40 });
 
       mobileObserver = new IntersectionObserver(
@@ -223,7 +229,7 @@ const initScrollAnimation = async () => {
             }
           });
         },
-        { threshold: 0.2, rootMargin: '0px 0px -10% 0px' }
+        { threshold: 0.2 }
       );
 
       cards.forEach((card) => mobileObserver.observe(card));
