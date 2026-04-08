@@ -15,8 +15,8 @@
       <article class="hero_swiper_wrap">
         <!-- Placeholder for LCP optimization -->
         <template v-show="!swiperReady">
-          <h3>{{ slides[0].title }}</h3>
-          <p class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</p>
+          <div>{{ slides[0].title }}</div>
+          <span class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</span>
         </template>
         <ClientOnly>
           <swiper-container
@@ -26,8 +26,8 @@
             @swiper="onSwiperReady"
           >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
-              <h3 class="hero_title">{{ slide.title }}</h3>
-              <p class="hero_desc">{{ slide.desc }}</p>
+              <div class="hero_title">{{ slide.title }}</div>
+              <span class="hero_desc">{{ slide.desc }}</span>
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
@@ -229,10 +229,10 @@ const groupedProjects = computed(() => {
   }
   .swiper-slide-active {
     opacity: 1 !important;
-    h3 {
+    .hero_title {
       animation: slideUp 1s ease forwards;
     }
-    p {
+    .hero_desc {
       animation: slideUp 1s ease forwards;
     }
   }
