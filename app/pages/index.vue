@@ -15,8 +15,8 @@
       <article class="hero_swiper_wrap">
         <!-- Placeholder for LCP optimization -->
         <template v-show="!swiperReady">
-          <div class="hero_title hero_title--placeholder">{{ slides[0].title }}</div>
-          <span class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</span>
+          <h3>{{ slides[0].title }}</h3>
+          <p class="hero_desc hero_desc--placeholder">{{ slides[0].desc }}</p>
         </template>
         <ClientOnly>
           <swiper-container
@@ -26,8 +26,8 @@
             @swiper="onSwiperReady"
           >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
-              <div class="hero_title">{{ slide.title }}</div>
-              <span class="hero_desc">{{ slide.desc }}</span>
+              <h3 class="hero_title">{{ slide.title }}</h3>
+              <p class="hero_desc">{{ slide.desc }}</p>
             </swiper-slide>
           </swiper-container>
         </ClientOnly>
