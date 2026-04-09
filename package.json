@@ -24,7 +24,9 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@axe-core/cli": "^4.11.1",
     "@nuxt/eslint": "^1.12.1",
+    "axe-core": "^4.11.2",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",

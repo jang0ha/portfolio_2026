@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat -ano)",
+      "Bash(npx lighthouse:*)",
+      "Read(//tmp/**)",
+      "Bash(npm run:*)",
+      "Bash(xargs -I {} taskkill /PID {} /F)",
+      "Bash(lsof -ti:3000)",
+      "Bash(xargs kill:*)",
+      "Bash(rm -rf .output)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

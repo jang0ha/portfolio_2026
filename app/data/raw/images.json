@@ -3,102 +3,102 @@
     "projectKey": "hiveplatform",
     "device": "mobile",
     "src": "/images/project/hiveplatform/mobile.png",
-    "alt": "hiveplatform visual mobile"
+    "alt": "하이브 플랫폼 프로젝트 모바일 인터페이스 스크린샷"
   },
   {
     "projectKey": "hiveplatform",
     "device": "pc",
     "src": "/images/project/hiveplatform/pc.png",
-    "alt": "hiveplatform visual pc"
+    "alt": "하이브 플랫폼 프로젝트 PC 인터페이스 스크린샷"
   },
   {
     "projectKey": "thestarlight",
     "device": "mobile",
     "src": "/images/project/thestarlight/mobile.png",
-    "alt": "thestarlight visual mobile"
+    "alt": "더스타라이트 프로젝트 모바일 UI 스크린샷"
   },
   {
     "projectKey": "thestarlight",
     "device": "pc",
     "src": "/images/project/thestarlight/pc.png",
-    "alt": "thestarlight visual pc"
+    "alt": "더스타라이트 프로젝트 PC 화면 스크린샷"
   },
   {
     "projectKey": "gc",
     "device": "mobile",
     "src": "/images/project/gc/mobile.png",
-    "alt": "gc visual mobile"
+    "alt": "GC 프로젝트 모바일 인터페이스 스크린샷"
   },
   {
     "projectKey": "gc",
     "device": "pc",
     "src": "/images/project/gc/pc.png",
-    "alt": "gc visual pc"
+    "alt": "GC 프로젝트 PC 인터페이스 스크린샷"
   },
   {
     "projectKey": "cau",
     "device": "mobile",
     "src": "/images/project/cau/mobile.png",
-    "alt": "cau visual mobile"
+    "alt": "중앙대학교 프로젝트 모바일 UI 스크린샷"
   },
   {
     "projectKey": "cau",
     "device": "pc",
     "src": "/images/project/cau/pc.png",
-    "alt": "cau visual pc"
+    "alt": "중앙대학교 프로젝트 PC 화면 스크린샷"
   },
   {
     "projectKey": "event",
     "device": "pc",
     "src": "/images/project/event/pc.png",
-    "alt": "event visual pc"
+    "alt": "이벤트 페이지 프로젝트 PC 인터페이스 스크린샷"
   },
   {
     "projectKey": "admin",
     "device": "pc",
     "src": "/images/project/admin/pc.png",
-    "alt": "admin visual pc"
+    "alt": "관리자 대시보드 프로젝트 PC 화면 스크린샷"
   },
   {
     "projectKey": "etc",
     "device": "mobile",
     "src": "/images/project/etc/mobile.png",
-    "alt": "etc visual mobile"
+    "alt": "기타 프로젝트 모바일 UI 스크린샷"
   },
   {
     "projectKey": "etc",
     "device": "pc",
     "src": "/images/project/etc/pc.png",
-    "alt": "etc visual pc"
+    "alt": "기타 프로젝트 PC 화면 스크린샷"
   },
   {
     "projectKey": "insurance",
     "device": "pc",
     "src": "/images/project/insurance/pc.png",
-    "alt": "insurance visual pc"
+    "alt": "보험 플랫폼 프로젝트 PC 인터페이스 스크린샷"
   },
   {
     "projectKey": "hotel",
     "device": "pc",
     "src": "/images/project/hotel/pc.png",
-    "alt": "hotel visual pc"
+    "alt": "호텔 예약 서비스 프로젝트 PC 화면 스크린샷"
   },
   {
     "projectKey": "hotel",
     "device": "mobile",
     "src": "/images/project/hotel/mobile.png",
-    "alt": "hotel visual mobile"
+    "alt": "호텔 예약 서비스 프로젝트 모바일 UI 스크린샷"
   },
   {
     "projectKey": "portfolio-admin",
     "device": "pc",
     "src": "/images/project/portfolio-admin/pc.png",
-    "alt": "portfolio-admin visual pc"
+    "alt": "포트폴리오 관리자 대시보드 PC 화면 스크린샷"
   },
   {
     "projectKey": "portfolio-admin",
     "device": "mobile",
     "src": "/images/project/portfolio-admin/mobile.png",
-    "alt": "portfolio-admin visual mobile"
+    "alt": "포트폴리오 관리자 대시보드 모바일 UI 스크린샷"
   }
 ]

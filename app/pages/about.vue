@@ -53,8 +53,9 @@
     <NuxtLink
       to="https://jang0ha.notion.site/a4645bc3e9d04441a41bac827c371ad8?v=07da49a6382f48de94896874ea9e7c60&source=copy_link"
       target="_blank"
-      :title="`포트폴리오 설명 노션으로 새창이동`"
+      :title="`포트폴리오 설명 노션에서 새창으로 열기`"
       rel="noopener"
+      aria-label="더 많은 정보 확인 (노션, 새 탭에서 열림)"
       class="btn_more"
     >
       더 많은 정보 확인하러 가기</NuxtLink

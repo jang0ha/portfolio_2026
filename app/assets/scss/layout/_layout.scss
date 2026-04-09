@@ -102,3 +102,19 @@ main {
 .section {
   position: relative;
 }
+
+// 스킵 링크: 포커스될 때만 표시되는 접근성 기능
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+
+  &:focus {
+    top: 0;
+  }
+}

@@ -4,8 +4,9 @@
       <NuxtLink
         to="https://github.com/jang0ha"
         target="_blank"
-        :title="`깃허브로 새창이동`"
+        :title="`깃허브로 새창에서 열기`"
         rel="noopener"
+        aria-label="깃허브 프로필 (새 탭에서 열림)"
       >
         https://github.com/jang0ha</NuxtLink
       >
@@ -24,6 +25,8 @@
             :init="false"
             class="hero_swiper_container"
             @swiper="onSwiperReady"
+            role="region"
+            aria-label="포트폴리오 주요 콘셉트 슬라이드"
           >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
               <div class="hero_title">{{ slide.title }}</div>
@@ -100,6 +103,10 @@ const swiperConfig = {
   speed: 1500,
   autoplay: {
     delay: 2500,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
   },
 };
 

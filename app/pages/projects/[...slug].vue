@@ -13,7 +13,8 @@
           v-for="link in project.links"
           :key="link.url"
           :to="link.url"
-          :title="`${project.title} ${link.label} 새창 이동`"
+          :title="`${project.title} ${link.label} 새 탭에서 열기`"
+          :aria-label="`${link.label} - ${project.title} (새 탭에서 열림)`"
           class="links"
           target="_blank"
           rel="noopener"
@@ -38,6 +39,8 @@
           :class="{ 'is-opened': isOpened }"
           @click="btnMoreToggle"
           class="btn_more"
+          :aria-expanded="isOpened"
+          aria-label="프로젝트 상세 정보"
         >
           {{ isOpened ? 'Project Detail' : 'Show more Information' }}
         </button>
