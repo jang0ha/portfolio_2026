@@ -67,18 +67,18 @@
     "type": "바이브코딩",
     "people": "1명",
     "contribution": "-",
-    "tech": "Claude, Task-master, Gemini API, React, styled-components",
+    "tech": "Claude, Task-master, Gemini API, React, styled-components, swiper.js, Lighthouse(97점), SEO 최적화",
     "language": "KO",
     "period": "2026.04.05 (총 1md)"
   },
   {
-    "projectKey": "hotel",
+    "projectKey": "portfolio",
     "type": "반응형",
     "people": "1명",
     "contribution": "100%",
-    "tech": "React, tailwindcss, Clerk(인증), prebuiltui(컴포넌트 라이브러리)",
-    "language": "EN",
-    "period": "2026.03.19 (총 4md)"
+    "tech": "Nuxt4(Main 버전), React(Migration 버전), PostgreSQL, GSAP, swiper.js, Vercel",
+    "language": "KO",
+    "period": "Nuxt4 | 2026.01.19 ~ 2026.02.03 (총 4md), React | 2026.03.01 ~ 2026.03.07 (총 5md)"
   },
   {
     "projectKey": "portfolio-admin",

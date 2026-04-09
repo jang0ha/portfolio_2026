@@ -57,23 +57,28 @@
   },
   {
     "projectKey": "insurance",
+    "label": "Lighthouse 결과 확인 (PDF)",
+    "url": "/lighthouse/insurance/Lighthouse_Report_Insurance_AI_Assistant.pdf"
+  },
+  {
+    "projectKey": "insurance",
     "label": "GitHub",
     "url": "https://github.com/jang0ha/react-insurance-app?tab=readme-ov-file"
   },
   {
-    "projectKey": "hotel",
-    "label": "Website",
-    "url": "https://react-hotel-booking-wheat.vercel.app/"
+    "projectKey": "portfolio",
+    "label": "Notion - Nuxt 버전 (정적 데이터 바인딩)",
+    "url": "https://jang0ha.notion.site/2026-Nuxt-2fd12b81902a809e9e4efaaf347069dd?source=copy_link"
   },
   {
-    "projectKey": "hotel",
-    "label": "Notion",
-    "url": "https://jang0ha.notion.site/react-32a12b81902a8039ab2ecb5effb97577?source=copy_link"
+    "projectKey": "portfolio",
+    "label": "Notion - React 버전 (PostgreSQL 연동) ",
+    "url": "https://jang0ha.notion.site/2026-react-32a12b81902a80c99d64d79d62d1d865?source=copy_link"
   },
   {
-    "projectKey": "hotel",
-    "label": "GitHub",
-    "url": "https://github.com/jang0ha/react-booking-wep/tree/main"
+    "projectKey": "portfolio",
+    "label": "Lighthouse 결과 확인 - Nuxt버전 (PDF)",
+    "url": "/lighthouse/portfolio/Lighthouse_Report_Portfolio_2026.pdf"
   },
   {
     "projectKey": "portfolio-admin",

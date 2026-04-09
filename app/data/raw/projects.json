@@ -2,20 +2,20 @@
   {
     "projectKey": "insurance",
     "category": "personal",
-    "sort": "[개인프로젝트] VibeCoding / Gemini API 활용 ",
+    "sort": "[개인] React / VibeCoding / Gemini API 활용 / Lighthouse 성능 최적화",
     "title": "보험 AI 어시스턴트"
   },
   {
     "projectKey": "portfolio-admin",
     "category": "personal",
-    "sort": "[개인프로젝트] CRUD",
+    "sort": "[개인] React CRUD",
     "title": "프로젝트 관리 Admin Panel"
   },
   {
-    "projectKey": "hotel",
+    "projectKey": "portfolio",
     "category": "personal",
-    "sort": "[개인프로젝트] Databinding/인증/관리자 페이지",
-    "title": "호텔 예약 플랫폼"
+    "sort": "[개인] Nuxt.js & React / Lighthouse 성능 최적화 / DB 설계(React)",
+    "title": "Portfolio 2026"
   },
   {
     "projectKey": "hiveplatform",

@@ -78,15 +78,15 @@
     "alt": "보험 플랫폼 프로젝트 PC 인터페이스 스크린샷"
   },
   {
-    "projectKey": "hotel",
+    "projectKey": "portfolio",
     "device": "pc",
-    "src": "/images/project/hotel/pc.png",
+    "src": "/images/project/portfolio/pc.png",
     "alt": "호텔 예약 서비스 프로젝트 PC 화면 스크린샷"
   },
   {
-    "projectKey": "hotel",
+    "projectKey": "portfolio",
     "device": "mobile",
-    "src": "/images/project/hotel/mobile.png",
+    "src": "/images/project/portfolio/mobile.png",
     "alt": "호텔 예약 서비스 프로젝트 모바일 UI 스크린샷"
   },
   {

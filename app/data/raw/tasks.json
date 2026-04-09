@@ -134,27 +134,31 @@
   },
   {
     "projectKey": "insurance",
-    "text": "(코드 리뷰어로서) AI가 짠 코드를 그대로 수용하지 않고, 성능(Performance)이나 유지보수성 측면에서 더 나은 대안을 직접 제시하고 수정"
+    "text": "(코드 리뷰어로서) AI(LLM)와 협업하여 개발 생산성을 200% 이상 높였으며, 생성된 코드를 UI/UX 관점에서 검수하고 성능 최적화를 직접 수행 (Lighthouse 검증 및 개선 - Performance 96점 / Accessibility 97점 / SEO 100점 달성)"
   },
   {
-    "projectKey": "hotel",
-    "text": "호텔 예약 플랫폼 (react기반) 클론 코딩 및 더미 데이터 활용 데이터 바인딩 프로젝트"
+    "projectKey": "portfolio",
+    "text": "Nuxt.js와 React 환경을 아우르는 고성능 퍼포먼스 중심의 포트폴리오 사이트 구축"
   },
   {
-    "projectKey": "hotel",
-    "text": "동적 UI 렌더링 구현 (예약 정보, 객실 상세, 사용자 리뷰 등)"
+    "projectKey": "portfolio",
+    "text": "성능의 극대화 - Nuxt.js(SSR) 환경에서 정교한 마크업과 스크립트 최적화를 통해 Lighthouse 성능 점수 98점 달성"
   },
   {
-    "projectKey": "hotel",
-    "text": "반응형 웹 디자인 적용으로 데스크탑 및 모바일 최적화 대응"
+    "projectKey": "portfolio",
+    "text": "기술적 확장 - 기존 Nuxt 기반 환경을 React로 마이그레이션하며 프레임워크 간의 렌더링 최적화 차이 분석 및 적용"
   },
   {
-    "projectKey": "hotel",
-    "text": "사용자 경험(UX) 중심의 직관적인 예약 프로세스 및 필터링 시스템 구축"
+    "projectKey": "portfolio",
+    "text": "데이터 설계 - PostgreSQL 연동을 통한 백엔드 데이터 구축 및 API 통신 구조 설계 (React 버전)"
   },
   {
-    "projectKey": "hotel",
-    "text": "Clerk을 사용한 안전한 인증을 제공"
+    "projectKey": "portfolio",
+    "text": "일관된 UX/UI - 직접 구축한 디자인 시스템을 바탕으로 Nuxt와 React 두 환경 모두에서 동일한 사용자 경험 제공"
+  },
+  {
+    "projectKey": "portfolio",
+    "text": "시스템 설정 및 사용자 선호도에 대응하는 다크/라이트 모드 테마 최적화 구현"
   },
   {
     "projectKey": "portfolio-admin",
