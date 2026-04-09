@@ -14,7 +14,9 @@
     <section class="hero_wrap container">
       <h2 class="main_title">Portfolio.</h2>
       <!-- 스크린리더 전용 안내: 슬라이드 제어 방법 -->
-      <span id="swiper-instructions" class="sr-only">좌우 화살표 키로 슬라이드를 이동할 수 있습니다.</span>
+      <span id="swiper-instructions" class="sr-only"
+        >좌우 화살표 키로 슬라이드를 이동할 수 있습니다.</span
+      >
       <article class="hero_swiper_wrap">
         <!-- Placeholder for LCP optimization -->
         <template v-show="!swiperReady">
@@ -154,7 +156,6 @@ const groupedProjects = computed(() => {
 .index_wrap {
   font-size: clamp(1.2rem, 2vw, 1.2rem);
   overflow: hidden;
-  display: block;
   @include media-breakpoint-up-sm {
     display: grid;
     grid-template-areas:
