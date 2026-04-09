@@ -217,7 +217,7 @@ const { image } = useResponsiveImage(project.value.images);
   .sort {
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .name {
     margin-bottom: 1rem;

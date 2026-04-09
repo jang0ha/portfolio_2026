@@ -359,7 +359,7 @@ onUnmounted(() => {
   .label {
     display: flex;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .desc {

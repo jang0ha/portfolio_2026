@@ -96,7 +96,7 @@ onMounted(() => {
 .logo,
 .menu,
 .btn_theme {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.2rem;
   @include media-breakpoint-up {
     font-size: 1.4rem;

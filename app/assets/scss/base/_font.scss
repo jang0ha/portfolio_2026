@@ -2,40 +2,32 @@
 @font-face {
   font-display: swap;
   font-family: 'MaruBuri';
-  font-style: normal;
-  font-weight: 300;
-  src: url('/fonts/MaruBuri-ExtraLight.otf') format('opentype');
-}
-/* MaruBuri-Light - korean */
-@font-face {
-  font-display: swap;
-  font-family: 'MaruBuri';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/MaruBuri-Light.otf') format('opentype');
+  font-style: light;
+  font-weight: light;
+  src: url('/fonts/MaruBuri-Light.woff2') format('woff2');
 }
 /* MaruBuri-Regular - korean */
 @font-face {
   font-display: swap;
   font-family: 'MaruBuri';
   font-style: normal;
-  font-weight: 500;
-  src: url('/fonts/MaruBuri-Regular.otf') format('opentype');
+  font-weight: normal;
+  src: url('/fonts/MaruBuri-Regular.woff2') format('woff2');
 }
 /* MaruBuri-SemiBold - korean */
 @font-face {
   font-display: swap;
   font-family: 'MaruBuri';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/fonts/MaruBuri-SemiBold.otf') format('opentype');
+  font-style: semi-bold;
+  font-weight: semi-bold;
+  src: url('/fonts/MaruBuri-SemiBold.woff2') format('woff2');
 }
 
 /* MaruBuri-Bold - korean */
 @font-face {
   font-display: swap;
   font-family: 'MaruBuri';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/MaruBuri-Bold.otf') format('opentype');
+  font-style: bold;
+  font-weight: bold;
+  src: url('/fonts/MaruBuri-Bold.woff2') format('woff2');
 }

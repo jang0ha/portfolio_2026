@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         //},
         {
           rel: 'preload',
-          href: '/fonts/MaruBuri-Light.woff2',
+          href: '/fonts/MaruBuri-Bold.woff2',
           as: 'font',
           type: 'font/woff2',
           crossorigin: 'anonymous',
