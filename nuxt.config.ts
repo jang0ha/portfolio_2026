@@ -67,16 +67,16 @@ export default defineNuxtConfig({
         //},
         {
           rel: 'preload',
-          href: '/fonts/noto-serif-kr-v31-korean-regular.woff2', // 스크린샷 상단 폰트
+          href: '/fonts/MaruBuri-Light.otf',
           as: 'font',
-          type: 'font/woff2',
+          type: 'font/otf',
           crossorigin: 'anonymous',
         },
         {
           rel: 'preload',
-          href: '/fonts/noto-serif-kr-v31-korean-500.woff2',
+          href: '/fonts/MaruBuri-Regular.otf',
           as: 'font',
-          type: 'font/woff2',
+          type: 'font/otf',
           crossorigin: 'anonymous',
         },
       ],

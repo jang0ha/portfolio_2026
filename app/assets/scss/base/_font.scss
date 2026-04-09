@@ -1,60 +1,41 @@
-/* noto-serif-kr-regular - korean */
+/* MaruBuri-Light - korean */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif KR';
+  font-display: swap;
+  font-family: 'MaruBuri';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/MaruBuri-ExtraLight.otf') format('opentype');
+}
+/* MaruBuri-Light - korean */
+@font-face {
+  font-display: swap;
+  font-family: 'MaruBuri';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/noto-serif-kr-v31-korean-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/MaruBuri-Light.otf') format('opentype');
 }
-/* noto-serif-kr-500 - korean */
+/* MaruBuri-Regular - korean */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif KR';
+  font-display: swap;
+  font-family: 'MaruBuri';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/noto-serif-kr-v31-korean-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/MaruBuri-Regular.otf') format('opentype');
 }
-/* noto-serif-kr-700 - korean */
+/* MaruBuri-SemiBold - korean */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url('/fonts/noto-serif-kr-v31-korean-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-kr-900 - korean */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif KR';
-  font-style: normal;
-  font-weight: 900;
-  src: url('/fonts/noto-serif-kr-v31-korean-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/noto-serif-v33-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* noto-serif-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif';
+  font-display: swap;
+  font-family: 'MaruBuri';
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/noto-serif-v33-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/MaruBuri-SemiBold.otf') format('opentype');
 }
 
-/* noto-serif-900 - latin */
+/* MaruBuri-Bold - korean */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Noto Serif';
+  font-display: swap;
+  font-family: 'MaruBuri';
   font-style: normal;
-  font-weight: 900;
-  src: url('/fonts/noto-serif-v33-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 700;
+  src: url('/fonts/MaruBuri-Bold.otf') format('opentype');
 }
