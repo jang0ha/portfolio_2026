@@ -13,6 +13,8 @@
     </section>
     <section class="hero_wrap container">
       <h2 class="main_title">Portfolio.</h2>
+      <!-- 스크린리더 전용 안내: 슬라이드 제어 방법 -->
+      <span id="swiper-instructions" class="sr-only">좌우 화살표 키로 슬라이드를 이동할 수 있습니다.</span>
       <article class="hero_swiper_wrap">
         <!-- Placeholder for LCP optimization -->
         <template v-show="!swiperReady">
@@ -27,6 +29,7 @@
             @swiper="onSwiperReady"
             role="region"
             aria-label="포트폴리오 주요 콘셉트 슬라이드"
+            aria-describedby="swiper-instructions"
           >
             <swiper-slide v-for="(slide, idx) in slides" :key="idx" class="swiper-slide">
               <div class="hero_title">{{ slide.title }}</div>
