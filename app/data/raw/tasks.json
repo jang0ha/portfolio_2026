@@ -122,11 +122,11 @@
 
   {
     "projectKey": "insurance",
-    "text": "Gemini API 연동을 통한 보험 약관 요약 및 맞춤형 큐레이션 UI 구현"
+    "text": "Gemini API 연동을 통한 AI 활용 챗봇 서비스 구현 (보험 상품 추천)"
   },
   {
     "projectKey": "insurance",
-    "text": "Task-master를 활용하여 아이디어를 빠르게 실체화하여(prd 수립) UI/UX의 흐름을 먼저 검증하고, 핵심 로직에 집중하여 개발하는 방식으로 프로젝트 진행"
+    "text": "Task-master를 활용하여 아이디어를 빠르게 실체화하여(PRD 수립) UI/UX의 흐름을 먼저 검증하고, 핵심 로직에 집중하여 개발하는 방식으로 프로젝트 진행"
   },
   {
     "projectKey": "insurance",
@@ -134,7 +134,7 @@
   },
   {
     "projectKey": "insurance",
-    "text": "(코드 리뷰어로서) AI(LLM)와 협업하여 개발 생산성을 200% 이상 높였으며, 생성된 코드를 UI/UX 관점에서 검수하고 성능 최적화를 직접 수행 (Lighthouse 검증 및 개선 - Performance 96점 / Accessibility 97점 / SEO 100점 달성)"
+    "text": "(코드 리뷰어로서) AI(LLM)와 협업하여 개발 생산성을 200% 이상 높였으며, 생성된 코드를 UI/UX 관점에서 검수하고 성능 최적화를 직접 수행 (Lighthouse 검증 및 개선)하여 사용자 경험을 극대화하는 챗봇 서비스 구축에 기여"
   },
   {
     "projectKey": "portfolio",
