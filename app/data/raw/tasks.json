@@ -1,7 +1,7 @@
 [
   {
     "projectKey": "hiveplatform",
-    "text": "Nuxt.js SSR 환경에서 글로벌 서비스 웹사이트 구축"
+    "text": "Nuxt.js SSR 환경에서 글로벌 서비스 웹사이트 개발"
   },
   {
     "projectKey": "hiveplatform",
@@ -69,7 +69,7 @@
   },
   {
     "projectKey": "cau",
-    "text": "2차 웹 접근성 심사 통과 (영상 콘텐츠 제외한 전체 사이트)"
+    "text": "웹 접근성 품질 인증 수준의 마크업 설계 및 150페이지 대규모 프로젝트 리딩 - 2차 웹 접근성 심사 통과 (영상 콘텐츠 제외한 전체 사이트)"
   },
   {
     "projectKey": "event",
@@ -122,7 +122,7 @@
 
   {
     "projectKey": "insurance",
-    "text": "LLM(대규모 언어 모델 - Gemini) 기반 사용자와의 대화를 통해 알맞은 보험 분석 및 추천 프로젝트"
+    "text": "Gemini API 연동을 통한 보험 약관 요약 및 맞춤형 큐레이션 UI 구현"
   },
   {
     "projectKey": "insurance",
