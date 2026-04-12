@@ -19,7 +19,7 @@
           target="_blank"
           rel="noopener"
         >
-          @{{ link.label }}
+          @ {{ link.label }}
         </NuxtLink>
       </div>
     </article>
@@ -240,15 +240,14 @@ const { image } = useResponsiveImage(project.value.images);
       color: var(--gray-color);
       transition: color 0.2s;
       &::after {
-        opacity: 0;
         content: '';
         width: 1rem;
         height: 1rem;
         margin-left: 0.6rem;
-        background-color: var(--text-color);
-        mask-image: url('#{svg-image(arrow-short)}');
-        -webkit-mask-image: url('#{svg-image(arrow-short)}');
-        transition: opacity 0.2s transform 0.1s 0.2s;
+        background-color: var(--gray-color);
+        mask-image: url('#{svg-image(anchor-diagonal)}');
+        -webkit-mask-image: url('#{svg-image(anchor-diagonal)}');
+        transition: background-color 0.2s mask-image 0.2s opacity 0.2s transform 0.1s 0.2s;
       }
       &:hover {
         font-weight: bold;
@@ -256,6 +255,9 @@ const { image } = useResponsiveImage(project.value.images);
         &::after {
           opacity: 1;
           transform: rotate(360deg);
+          background-color: var(--text-color);
+          mask-image: url('#{svg-image(arrow-short)}');
+          -webkit-mask-image: url('#{svg-image(arrow-short)}');
         }
       }
     }
