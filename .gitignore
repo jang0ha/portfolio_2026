@@ -22,3 +22,4 @@ logs
 .env
 .env.*
 !.env.example
+public/images/project/hiveplatform/samsung-spec-master.zip
