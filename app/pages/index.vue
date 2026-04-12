@@ -159,9 +159,9 @@ const groupedProjects = computed(() => {
   @include media-breakpoint-up-sm {
     display: grid;
     grid-template-areas:
-      'index index index index index'
-      'hero hero hero hero hero'
-      '- - project project project';
+      'index index index index index index'
+      'hero hero hero hero hero hero'
+      '- - project project project project';
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
   @include media-breakpoint-up-lg {
@@ -306,6 +306,7 @@ const groupedProjects = computed(() => {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 1rem;
   text-align: left;
   color: var(--text-color);
   transition: all 0.2s;
@@ -323,6 +324,9 @@ const groupedProjects = computed(() => {
     background-color: var(--text-color);
     mask-image: url('#{svg-image(anchor-diagonal)}');
     -webkit-mask-image: url('#{svg-image(anchor-diagonal)}');
+  }
+  @include media-breakpoint-up {
+    margin-top: 0;
   }
 }
 </style>
