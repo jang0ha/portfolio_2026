@@ -106,8 +106,8 @@
   },
   {
     "projectKey": "admin",
-    "label": "페이지 개선",
-    "description": "Samsung One UI 디자인 가이드 적용 (아이콘, 컬러 체계)\n점진적 리팩토링을 통한 코드 안정성 확보"
+    "label": "페이지 개선 (약 40p)",
+    "description": "Samsung UI 디자인 가이드 적용 (아이콘, 컬러 체계)\n점진적 리팩토링을 통한 코드 안정성 확보"
   },
   {
     "projectKey": "etc",
